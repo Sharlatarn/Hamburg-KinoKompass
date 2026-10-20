@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinoprogramm Hamburg – Die nächsten 3 Tage</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cineville: {
+                            DEFAULT: '#FF5A5F',
+                            dark: '#E0484C',
+                            light: '#FF888B'
+                        },
+                        cinema: {
+                            bg: '#0F172A',
+                            card: '#1E293B',
+                            accent: '#38BDF8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0F19;
+            color: #F3F4F6;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F172A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased">
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <!-- Logo & Title -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-500 to-amber-500 flex items-center justify-center text-white text-xl font-bold shadow-md shadow-red-500/20">
+                        <i class="fa-solid font-black fa-film"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl sm:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
+                            Kino Hamburg
+                        </h1>
+                        <p class="text-xs text-slate-400">Arthouse & Independent Programmvorschau</p>
+                    </div>
+                </div>
+
+                <!-- Search & Status Bar -->
+                <div class="flex flex-wrap items-center gap-3">
+                    <!-- Live Refresh Indicator -->
+                    <div class="flex items-center space-x-2 bg-slate-800/80 px-3 py-1.5 rounded-full border border-slate-700/60 text-xs text-slate-300">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                        </span>
+                        <span id="last-update">Aktualisiert: Gerade eben</span>
+                        <button id="refresh-btn" title="Programm manuell aktualisieren" class="ml-1 hover:text-white transition-colors">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Search Box -->
+                    <div class="relative flex-1 sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                        <input type="text" id="search-input" placeholder="Film oder Regie suchen..." 
+                            class="w-full pl-9 pr-4 py-1.5 text-sm bg-slate-800 border border-slate-700 rounded-xl text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500 transition-all">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full flex-grow">
+
+        <!-- Controls / Filters Panel -->
+        <section class="mb-8 space-y-6 bg-slate-900/50 p-4 sm:p-6 rounded-2xl border border-slate-800/80">
+            
+            <!-- Date Filter Toggle Buttons -->
+            <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">
+                    <i class="fa-regular fa-calendar-days mr-1.5 text-red-400"></i> Datum auswählen
+                </label>
+                <div class="flex flex-wrap gap-2 sm:gap-3" id="date-buttons-container">
+                    <!-- Date buttons will be rendered by JS -->
+                </div>
+            </div>
+
+            <!-- Cineville Quick Toggle & Cinema Filters -->
+            <div>
+                <div class="flex flex-wrap justify-between items-center mb-3 gap-2">
+                    <label class="text-xs font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                        <i class="fa-solid fa-building-columns text-slate-400"></i> Kinos auswählen
+                    </label>
+                    <div class="flex items-center gap-2">
+                        <button id="toggle-cineville-only" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 px-3 py-1 rounded-lg transition-all flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-cineville"></span> Nur Cineville Kinos
+                        </button>
+                        <button id="select-all-cinemas" class="text-xs text-slate-400 hover:text-white transition-colors underline">
+                            Alle wählen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cinema Toggle Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2.5" id="cinema-buttons-container">
+                    <!-- Cinema Toggle Buttons will be generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Active Filters Summary -->
+        <div class="flex flex-wrap justify-between items-center mb-6 px-1 text-sm text-slate-400">
+            <div id="results-count">Lade Vorstellungen...</div>
+            <div class="flex items-center space-x-3 text-xs">
+                <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-cineville inline-block mr-1"></span> = Cineville Abo</span>
+                <span class="flex items-center"><i class="fa-solid fa-closed-captioning text-slate-500 mr-1"></i> = OmU / OV Verfügbar</span>
+            </div>
+        </div>
+
+        <!-- Movie Screenings List Container -->
+        <div id="movie-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Screenings Cards rendered here dynamic -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="hidden text-center py-16 bg-slate-900/30 rounded-2xl border border-slate-800">
+            <i class="fa-solid fa-film text-5xl text-slate-700 mb-4"></i>
+            <h3 class="text-lg font-medium text-slate-300">Keine Vorstellungen gefunden</h3>
+            <p class="text-sm text-slate-500 mt-1 max-w-md mx-auto">Versuche deine Filterkriterien oder den Suchbegriff anzupassen, um Ergebnisse für die nächsten Tage zu sehen.</p>
+            <button id="reset-filters-btn" class="mt-4 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm rounded-xl border border-slate-700 transition-colors">
+                Filter zurücksetzen
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-8 mt-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <div>
+                <p class="font-semibold text-slate-300">Hamburg Kinoprogramm Aggregator</p>
+                <p class="text-xs text-slate-500 mt-0.5">Automatische Zusammenstellung für Independent- & Arthouse-Kinos in Hamburg.</p>
+            </div>
+            <div class="text-xs text-slate-500 max-w-md">
+                <p>Hinweis: Cineville ist eine eingetragene Marke. Alle Angaben ohne Gewähr. Das Programm aktualisiert sich automatisch alle 15 Minuten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // --- 1. CONFIGURATION & DATA STRUCTURES ---
+
+        const CINEMAS = [
+            { id: '3001', name: '3001 Kino', cineville: true, address: 'Schanzenstraße 75', district: 'Sternschanze' },
+            { id: 'abaton', name: 'Abaton-Kino', cineville: true, address: 'Allende-Platz 3', district: 'Rotherbaum' },
+            { id: 'bmovie', name: 'B-Movie', cineville: true, address: 'Brigittenstraße 5', district: 'St. Pauli' },
+            { id: 'filmraum', name: 'filmRaum', cineville: true, address: 'Müggenkampstraße 45', district: 'Eimsbüttel' },
+            { id: 'nestkino', name: 'nestkino Studio Kino', cineville: true, address: 'Bernstorffstraße 93', district: 'Altona' },
+            { id: 'zeise', name: 'Zeise Kino', cineville: true, address: 'Friedensallee 7-9', district: 'Ottensen' },
+            { id: 'savoy', name: 'Savoy Filmtheater', cineville: false, address: 'Steindamm 54', district: 'St. Georg' },
+            { id: 'metropolis', name: 'Metropolis', cineville: false, address: 'Kleine Theaterstraße 10', district: 'Neustadt' },
+            { id: 'passage', name: 'Passage', cineville: false, address: 'Mönckebergstraße 17', district: 'Altstadt' },
+            { id: 'holi', name: 'Holi', cineville: false, address: 'Schlankreye 69', district: 'Eimsbüttel' }
+        ];
+
+        // Generate Dates for Today, Tomorrow, Day After Tomorrow
+        function generateDates() {
+            const dates = [];
+            const today = new Date();
+            const daysOfWeek = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+            const months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
+
+            for (let i = 0; i < 3; i++) {
+                const d = new Date(today);
+                d.setDate(today.getDate() + i);
+                
+                let label = '';
+                if (i === 0) label = 'Heute';
+                else if (i === 1) label = 'Morgen';
+                else label = `${daysOfWeek[d.getDay()]}.`;
+
+                const isoDate = d.toISOString().split('T')[0];
+                const formattedDate = `${d.getDate()}. ${months[d.getMonth()]}`;
+
+                dates.push({
+                    index: i,
+                    iso: isoDate,
+                    dayName: label,
+                    dateStr: formattedDate
+                });
+            }
+            return dates;
+        }
+
+        const DATES = generateDates();
+
+        // Sample Movies Database with images and metadata
+        const MOVIES_DB = [
+            {
+                id: 'm1',
+                title: 'Zone of Interest',
+                director: 'Jonathan Glazer',
+                duration: '105 Min.',
+                genre: 'Drama / Historie',
+                poster: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80',
+                rating: 'FSK 12'
+            },
+            {
+                id: 'm2',
+                title: 'Anatomie eines Falls',
+                director: 'Justine Triet',
+                duration: '151 Min.',
+                genre: 'Thriller / Krimi',
+                poster: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80',
+                rating: 'FSK 12'
+            },
+            {
+                id: 'm3',
+                title: 'Dune: Part Two',
+                director: 'Denis Villeneuve',
+                duration: '166 Min.',
+                genre: 'Sci-Fi / Abenteuer',
+                poster: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80',
+                rating: 'FSK 12'
+            },
+            {
+                id: 'm4',
+                title: 'Perfect Days',
+                director: 'Wim Wenders',
+                duration: '124 Min.',
+                genre: 'Drama',
+                poster: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80',
+                rating: 'FSK 0'
+            },
+            {
+                id: 'm5',
+                title: 'Poor Things',
+                director: 'Yorgos Lanthimos',
+                duration: '141 Min.',
+                genre: 'Komödie / Fantasy',
+                poster: 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80',
+                rating: 'FSK 16'
+            },
+            {
+                id: 'm6',
+                title: 'Drive-Away Dolls',
+                director: 'Ethan Coen',
+                duration: '84 Min.',
+                genre: 'Roadmovie / Komödie',
+                poster: 'https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=600&q=80',
+                rating: 'FSK 16'
+            }
+        ];
+
+        // Languages & Formats
+        const FORMATS = ['OmU', 'OV', 'DF', 'OmU (Engl. UT)'];
+
+        // --- 2. STATE MANAGEMENT ---
+        let state = {
+            selectedDateIso: DATES[0].iso,
+            selectedCinemaIds: CINEMAS.map(c => c.id), // Default: All selected
+            searchQuery: '',
+            screeningsData: []
+        };
+
+        // --- 3. GENERATE DYNAMIC PROGRAM (SIMULATED BACKEND/SCRAPER) ---
+        function generateMockScreenings() {
+            const screenings = [];
+            let idCounter = 1;
+
+            DATES.forEach(dateObj => {
+                CINEMAS.forEach(cinema => {
+                    // Decide how many movies run in this cinema today (2-4 movies)
+                    const numMovies = Math.floor(Math.random() * 3) + 2;
+                    const shuffledMovies = [...MOVIES_DB].sort(() => 0.5 - Math.random());
+
+                    for (let i = 0; i < numMovies; i++) {
+                        const movie = shuffledMovies[i];
+                        const times = [];
+                        
+                        // Pick 1-3 showtimes
+                        const showCount = Math.floor(Math.random() * 2) + 1;
+                        const possibleHours = [15, 17, 18, 20, 21];
+                        
+                        for(let t=0; t < showCount; t++) {
+                            const hr = possibleHours[(i + t + Math.floor(Math.random()*2)) % possibleHours.length];
+                            const min = Math.random() > 0.5 ? '15' : '45';
+                            times.push(`${hr}:${min}`);
+                        }
+
+                        // Deduplicate and sort times
+                        const uniqueTimes = [...new Set(times)].sort();
+
+                        screenings.push({
+                            id: `sc_${idCounter++}`,
+                            dateIso: dateObj.iso,
+                            cinemaId: cinema.id,
+                            movieId: movie.id,
+                            movieTitle: movie.title,
+                            director: movie.director,
+                            duration: movie.duration,
+                            genre: movie.genre,
+                            poster: movie.poster,
+                            rating: movie.rating,
+                            times: uniqueTimes,
+                            hall: `Saal ${Math.floor(Math.random() * 3) + 1}`,
+                            langTag: FORMATS[Math.floor(Math.random() * FORMATS.length)]
+                        });
+                    }
+                });
+            });
+
+            return screenings;
+        }
+
+        // --- 4. RENDER UI COMPONENTS ---
+
+        // Render Date Buttons
+        function renderDateButtons() {
+            const container = document.getElementById('date-buttons-container');
+            container.innerHTML = '';
+
+            DATES.forEach(d => {
+                const isActive = state.selectedDateIso === d.iso;
+                const btn = document.createElement('button');
+                btn.className = `px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-2 ${
+                    isActive 
+                    ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white shadow-lg shadow-red-600/30 ring-2 ring-red-500/50' 
+                    : 'bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700/80'
+                }`;
+                btn.innerHTML = `
+                    <span class="font-bold">${d.dayName}</span>
+                    <span class="text-xs ${isActive ? 'text-red-100' : 'text-slate-400'}">(${d.dateStr})</span>
+                `;
+                btn.onclick = () => {
+                    state.selectedDateIso = d.iso;
+                    renderDateButtons();
+                    renderScreenings();
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        // Render Cinema Toggle Buttons
+        function renderCinemaButtons() {
+            const container = document.getElementById('cinema-buttons-container');
+            container.innerHTML = '';
+
+            CINEMAS.forEach(cinema => {
+                const isSelected = state.selectedCinemaIds.includes(cinema.id);
+                const btn = document.createElement('button');
+                
+                // Styling based on state and Cineville membership
+                let baseStyle = "px-3 py-2 rounded-xl text-xs sm:text-sm font-medium text-left transition-all duration-150 flex flex-col justify-between border relative overflow-hidden group ";
+                
+                if (isSelected) {
+                    baseStyle += "bg-slate-800 border-slate-600 text-white shadow-md ";
+                } else {
+                    baseStyle += "bg-slate-900/40 border-slate-800/80 text-slate-500 hover:text-slate-400 hover:border-slate-700 ";
+                }
+
+                btn.className = baseStyle;
+
+                btn.innerHTML = `
+                    <div class="flex items-center justify-between w-full mb-1">
+                        <span class="font-semibold truncate pr-1 ${isSelected ? 'text-slate-100' : 'text-slate-400'}">${cinema.name}</span>
+                        <div class="w-4 h-4 rounded-full flex items-center justify-center text-[10px] ${isSelected ? 'bg-red-500 text-white' : 'bg-slate-800 text-slate-600'}">
+                            ${isSelected ? '<i class="fa-solid fa-check"></i>' : ''}
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] w-full">
+                        <span class="text-slate-500 truncate">${cinema.district}</span>
+                        ${cinema.cineville ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-cineville/20 text-cineville border border-cineville/30">CINEVILLE</span>' : ''}
+                    </div>
+                `;
+
+                btn.onclick = () => {
+                    if (isSelected) {
+                        state.selectedCinemaIds = state.selectedCinemaIds.filter(id => id !== cinema.id);
+                    } else {
+                        state.selectedCinemaIds.push(cinema.id);
+                    }
+                    renderCinemaButtons();
+                    renderScreenings();
+                };
+
+                container.appendChild(btn);
+            });
+        }
+
+        // Render Cards Matrix
+        function renderScreenings() {
+            const container = document.getElementById('movie-list');
+            const emptyState = document.getElementById('empty-state');
+            const countLabel = document.getElementById('results-count');
+
+            // Filter Screenings
+            const filtered = state.screeningsData.filter(s => {
+                const matchDate = s.dateIso === state.selectedDateIso;
+                const matchCinema = state.selectedCinemaIds.includes(s.cinemaId);
+                const matchSearch = state.searchQuery === '' || 
+                    s.movieTitle.toLowerCase().includes(state.searchQuery.toLowerCase()) ||
+                    s.director.toLowerCase().includes(state.searchQuery.toLowerCase());
+                
+                return matchDate && matchCinema && matchSearch;
+            });
+
+            // Update Counter
+            countLabel.innerHTML = `Zeige <strong>${filtered.length}</strong> Vorstellungen`;
+
+            if (filtered.length === 0) {
+                container.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+            container.innerHTML = '';
+
+            filtered.forEach(s => {
+                const cinemaObj = CINEMAS.find(c => c.id === s.cinemaId);
+                
+                const card = document.createElement('div');
+                card.className = "bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between shadow-lg group";
+
+                card.innerHTML = `
+                    <div>
+                        <!-- Header / Poster Banner -->
+                        <div class="relative h-44 w-full overflow-hidden bg-slate-800">
+                            <img src="${s.poster}" alt="${s.movieTitle}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+                            
+                            <!-- Badges Top -->
+                            <div class="absolute top-3 left-3 right-3 flex justify-between items-start gap-2">
+                                <span class="bg-slate-950/80 backdrop-blur-md text-xs px-2.5 py-1 rounded-lg border border-slate-700/60 font-medium text-slate-200">
+                                    ${s.langTag}
+                                </span>
+                                ${cinemaObj?.cineville ? `
+                                    <span class="bg-cineville text-white font-black text-[10px] tracking-wider px-2 py-1 rounded-md shadow-lg shadow-cineville/40 uppercase">
+                                        Cineville Abo
+                                    </span>
+                                ` : ''}
+                            </div>
+
+                            <!-- Title on Image -->
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <span class="text-xs text-amber-400 font-semibold tracking-wide uppercase">${s.genre}</span>
+                                <h3 class="text-xl font-bold text-white leading-tight drop-shadow-md truncate">${s.movieTitle}</h3>
+                            </div>
+                        </div>
+
+                        <!-- Movie Metadata & Cinema Info -->
+                        <div class="p-4 space-y-3">
+                            <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-2.5">
+                                <span><i class="fa-solid fa-clapperboard mr-1 text-slate-500"></i> ${s.director}</span>
+                                <span><i class="fa-regular fa-clock mr-1 text-slate-500"></i> ${s.duration}</span>
+                            </div>
+
+                            <div class="flex items-start justify-between gap-2 pt-1">
+                                <div>
+                                    <h4 class="font-semibold text-slate-200 text-sm flex items-center gap-1.5">
+                                        ${cinemaObj?.name}
+                                    </h4>
+                                    <p class="text-xs text-slate-400">${cinemaObj?.address} (${cinemaObj?.district})</p>
+                                </div>
+                                <span class="text-[11px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700/50">${s.hall}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Showtimes Footer -->
+                    <div class="p-4 pt-0">
+                        <div class="mt-2 bg-slate-950/60 p-2.5 rounded-xl border border-slate-800/80">
+                            <span class="text-[11px] uppercase tracking-wider text-slate-400 font-medium block mb-2">Vorstellungen:</span>
+                            <div class="flex flex-wrap gap-2">
+                                ${s.times.map(t => `
+                                    <button class="bg-slate-800 hover:bg-red-600 hover:text-white text-slate-200 font-semibold text-xs px-3 py-1.5 rounded-lg border border-slate-700/80 hover:border-red-500 transition-all shadow-sm">
+                                        ${t} Uhr
+                                    </button>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        // --- 5. EVENT HANDLERS & HELPERS ---
+
+        function setupEventListeners() {
+            // Search Input
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', (e) => {
+                state.searchQuery = e.target.value.trim();
+                renderScreenings();
+            });
+
+            // Select All Cinemas Button
+            document.getElementById('select-all-cinemas').addEventListener('click', () => {
+                state.selectedCinemaIds = CINEMAS.map(c => c.id);
+                renderCinemaButtons();
+                renderScreenings();
+            });
+
+            // Quick Toggle: Only Cineville Cinemas
+            document.getElementById('toggle-cineville-only').addEventListener('click', () => {
+                state.selectedCinemaIds = CINEMAS.filter(c => c.cineville).map(c => c.id);
+                renderCinemaButtons();
+                renderScreenings();
+            });
+
+            // Reset Filters
+            document.getElementById('reset-filters-btn').addEventListener('click', () => {
+                state.selectedCinemaIds = CINEMAS.map(c => c.id);
+                state.searchQuery = '';
+                document.getElementById('search-input').value = '';
+                renderCinemaButtons();
+                renderScreenings();
+            });
+
+            // Manual Refresh Simulation
+            document.getElementById('refresh-btn').addEventListener('click', () => {
+                triggerDataUpdate();
+            });
+        }
+
+        // Simulate Dynamic Live Updates
+        function triggerDataUpdate() {
+            const updateBtn = document.getElementById('refresh-btn');
+            const statusText = document.getElementById('last-update');
+            
+            updateBtn.classList.add('animate-spin');
+            statusText.innerText = "Aktualisiere Daten...";
+
+            setTimeout(() => {
+                state.screeningsData = generateMockScreenings();
+                renderScreenings();
+                
+                updateBtn.classList.remove('animate-spin');
+                const now = new Date();
+                statusText.innerText = `Aktualisiert: ${now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
+            }, 600);
+        }
+
+        // Automatic Background Sync Interval (Simulates Cron/Live-API)
+        function startAutoUpdateTimer() {
+            // Refresh every 15 minutes automatically
+            setInterval(() => {
+                triggerDataUpdate();
+            }, 15 * 60 * 1000);
+        }
+
+        // --- 6. INITIALIZATION ---
+        window.addEventListener('DOMContentLoaded', () => {
+            // Generate Initial Data
+            state.screeningsData = generateMockScreenings();
+
+            // Render Views
+            renderDateButtons();
+            renderCinemaButtons();
+            renderScreenings();
+
+            // Setup Interactivity
+            setupEventListeners();
+            startAutoUpdateTimer();
+        });
+    </script>
+</body>
+</html>
