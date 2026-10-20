@@ -3,7 +3,8 @@ from datetime import datetime, timedelta
 
 def fetch_cinema_data():
     today = datetime.now()
-    dates = [(today + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(3)]
+    # Generiert nun dynamisch 7 Tage im Voraus
+    dates = [(today + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(7)]
     
     sample_movies = [
         {
@@ -26,7 +27,7 @@ def fetch_cinema_data():
             "director": "Jonathan Glazer",
             "duration": "105 Min.",
             "cinema": "Zeise Kino",
-            "date": dates[0],
+            "date": dates[1],
             "time": "20:15",
             "room": "Kino 1",
             "format": "OmU",
@@ -38,60 +39,21 @@ def fetch_cinema_data():
             "genre": "Komödie / Fantasy",
             "director": "Yorgos Lanthimos",
             "duration": "141 Min.",
-            "cinema": "3001 Kino",
-            "date": dates[0],
-            "time": "18:45",
-            "room": "Saal 2",
-            "format": "OV",
-            "link": "https://www.3001-kino.de"
-        },
-        {
-            "id": 4,
-            "title": "Poor Things",
-            "genre": "Komödie / Fantasy",
-            "director": "Yorgos Lanthimos",
-            "duration": "141 Min.",
             "cinema": "Abaton-Kino",
-            "date": dates[0],
+            "date": dates[2],
             "time": "21:00",
             "room": "Großer Saal",
             "format": "OmU",
             "link": "https://www.abaton.de"
         },
         {
-            "id": 5,
-            "title": "Perfect Days",
-            "genre": "Drama",
-            "director": "Wim Wenders",
-            "duration": "124 Min.",
-            "cinema": "Abaton-Kino",
-            "date": dates[0],
-            "time": "17:15",
-            "room": "Saal 1",
-            "format": "OmU",
-            "link": "https://www.abaton.de"
-        },
-        {
-            "id": 6,
-            "title": "Anatomie eines Falls",
-            "genre": "Thriller / Drama",
-            "director": "Justine Triet",
-            "duration": "151 Min.",
-            "cinema": "Zeise Kino",
-            "date": dates[1],
-            "time": "19:30",
-            "room": "Kino 2",
-            "format": "DF",
-            "link": "https://www.zeise.de"
-        },
-        {
-            "id": 7,
+            "id": 4,
             "title": "Klassiker der Moderne",
             "genre": "Retrospektive",
             "director": "Diverse",
             "duration": "90 Min.",
             "cinema": "Metropolis",
-            "date": dates[2],
+            "date": dates[6], # Tag 7 in der Vorschau
             "time": "17:00",
             "room": "Hauptsaal",
             "format": "OV",
