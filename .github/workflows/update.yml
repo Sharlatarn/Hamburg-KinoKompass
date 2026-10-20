@@ -2,9 +2,8 @@ name: Update Kinoprogramm
 
 on:
   schedule:
-    # Läuft jeden Tag um 04:00 Uhr morgens UTC
     - cron: '0 4 * * *'
-  workflow_dispatch: # Erlaubt manuelles Starten per Klick
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -29,5 +28,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add program.json
-          git commit -m "Automatisches Update des Kinoprogramms" || exit 0
+          git commit -m "Automatisches Update des Kinoprogramms (7 Tage)" || exit 0
           git push
