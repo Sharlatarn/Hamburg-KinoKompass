@@ -1,601 +1,565 @@
 <!DOCTYPE html>
-<html lang="de" class="dark">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinoprogramm Hamburg – Die nächsten 3 Tage</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        cineville: {
-                            DEFAULT: '#FF5A5F',
-                            dark: '#E0484C',
-                            light: '#FF888B'
-                        },
-                        cinema: {
-                            bg: '#0F172A',
-                            card: '#1E293B',
-                            accent: '#38BDF8'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Kino Hamburg - Programm</title>
     <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #273548;
+            --accent: #f43f5e;
+            --accent-hover: #e11d48;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --cineville: #0ea5e9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0B0F19;
-            color: #F3F4F6;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 20px;
         }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
+
+        header {
+            max-width: 1200px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 15px;
         }
-        ::-webkit-scrollbar-track {
-            background: #0F172A;
+
+        h1 {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        ::-webkit-scrollbar-thumb {
-            background: #334155;
+
+        .search-box input {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            width: 250px;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .filters-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .filter-group-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .filter-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .btn-filter {
+            background: var(--bg-main);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-filter.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: white;
+        }
+
+        .btn-filter.active-cineville {
+            background: var(--cineville);
+            border-color: var(--cineville);
+            color: white;
+        }
+
+        .action-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+
+        .action-links span {
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .action-links span:hover {
+            color: var(--text-main);
+            text-decoration: underline;
+        }
+
+        /* Movie List Layout (Compact & Accordion) */
+        .movie-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .movie-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+
+        .movie-item:hover {
+            border-color: var(--text-muted);
+        }
+
+        .movie-header {
+            padding: 12px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .movie-title-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .movie-title {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .movie-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .movie-badges {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            padding: 2px 6px;
             border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
         }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #475569;
+
+        .badge-cineville {
+            background: var(--cineville);
+            color: white;
+        }
+
+        .expand-icon {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            transition: transform 0.2s;
+        }
+
+        .movie-item.open .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Expanded Showtimes Details */
+        .movie-details {
+            display: none;
+            padding: 0 16px 16px 16px;
+            border-top: 1px solid var(--border);
+            background: rgba(15, 23, 42, 0.3);
+        }
+
+        .movie-item.open .movie-details {
+            display: block;
+        }
+
+        .showtime-group {
+            margin-top: 12px;
+        }
+
+        .showtime-cinema-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .showtimes-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .showtime-chip {
+            background: var(--bg-main);
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .showtime-time {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .showtime-format {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            background: var(--border);
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .search-box input {
+                width: 100%;
+            }
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between antialiased">
+<body>
 
-    <!-- Header Section -->
-    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                <!-- Logo & Title -->
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-500 to-amber-500 flex items-center justify-center text-white text-xl font-bold shadow-md shadow-red-500/20">
-                        <i class="fa-solid font-black fa-film"></i>
-                    </div>
-                    <div>
-                        <h1 class="text-xl sm:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
-                            Kino Hamburg
-                        </h1>
-                        <p class="text-xs text-slate-400">Arthouse & Independent Programmvorschau</p>
-                    </div>
-                </div>
-
-                <!-- Search & Status Bar -->
-                <div class="flex flex-wrap items-center gap-3">
-                    <!-- Live Refresh Indicator -->
-                    <div class="flex items-center space-x-2 bg-slate-800/80 px-3 py-1.5 rounded-full border border-slate-700/60 text-xs text-slate-300">
-                        <span class="relative flex h-2 w-2">
-                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                        </span>
-                        <span id="last-update">Aktualisiert: Gerade eben</span>
-                        <button id="refresh-btn" title="Programm manuell aktualisieren" class="ml-1 hover:text-white transition-colors">
-                            <i class="fa-solid fa-rotate-right"></i>
-                        </button>
-                    </div>
-
-                    <!-- Search Box -->
-                    <div class="relative flex-1 sm:w-64">
-                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
-                        <input type="text" id="search-input" placeholder="Film oder Regie suchen..." 
-                            class="w-full pl-9 pr-4 py-1.5 text-sm bg-slate-800 border border-slate-700 rounded-xl text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500 transition-all">
-                    </div>
-                </div>
-            </div>
+    <header>
+        <h1>🎬 Kino Hamburg <span style="font-size:0.8rem; color:var(--text-muted); font-weight:normal;">Kompakt-Programm</span></h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Film, Regie oder Genre suchen..." oninput="filterMovies()">
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full flex-grow">
+    <div class="container">
+        <!-- Filter Box -->
+        <div class="filters-section">
+            <div class="filter-group-title">📅 Datum auswählen</div>
+            <div class="filter-row" id="dateFilterRow"></div>
 
-        <!-- Controls / Filters Panel -->
-        <section class="mb-8 space-y-6 bg-slate-900/50 p-4 sm:p-6 rounded-2xl border border-slate-800/80">
-            
-            <!-- Date Filter Toggle Buttons -->
-            <div>
-                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">
-                    <i class="fa-regular fa-calendar-days mr-1.5 text-red-400"></i> Datum auswählen
-                </label>
-                <div class="flex flex-wrap gap-2 sm:gap-3" id="date-buttons-container">
-                    <!-- Date buttons will be rendered by JS -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
+                <div class="filter-group-title" style="margin-bottom: 0;">🏛️ Kinos auswählen</div>
+                <div class="action-links">
+                    <span onclick="toggleCinevilleFilter()" id="cinevilleToggleText">Nur Cineville Kinos</span>
+                    <span onclick="toggleAllCinemas(true)">Alle wählen</span>
+                    <span onclick="toggleAllCinemas(false)">Keine</span>
                 </div>
             </div>
-
-            <!-- Cineville Quick Toggle & Cinema Filters -->
-            <div>
-                <div class="flex flex-wrap justify-between items-center mb-3 gap-2">
-                    <label class="text-xs font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-                        <i class="fa-solid fa-building-columns text-slate-400"></i> Kinos auswählen
-                    </label>
-                    <div class="flex items-center gap-2">
-                        <button id="toggle-cineville-only" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 px-3 py-1 rounded-lg transition-all flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-cineville"></span> Nur Cineville Kinos
-                        </button>
-                        <button id="select-all-cinemas" class="text-xs text-slate-400 hover:text-white transition-colors underline">
-                            Alle wählen
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Cinema Toggle Grid -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2.5" id="cinema-buttons-container">
-                    <!-- Cinema Toggle Buttons will be generated by JS -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats / Active Filters Summary -->
-        <div class="flex flex-wrap justify-between items-center mb-6 px-1 text-sm text-slate-400">
-            <div id="results-count">Lade Vorstellungen...</div>
-            <div class="flex items-center space-x-3 text-xs">
-                <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-cineville inline-block mr-1"></span> = Cineville Abo</span>
-                <span class="flex items-center"><i class="fa-solid fa-closed-captioning text-slate-500 mr-1"></i> = OmU / OV Verfügbar</span>
-            </div>
+            <div class="filter-row" id="cinemaFilterRow" style="margin-top: 8px;"></div>
         </div>
 
-        <!-- Movie Screenings List Container -->
-        <div id="movie-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Screenings Cards rendered here dynamic -->
+        <!-- Movie List Container -->
+        <div id="movieList" class="movie-list">
+            <!-- Wird dynamisch gefüllt -->
         </div>
+    </div>
 
-        <!-- Empty State -->
-        <div id="empty-state" class="hidden text-center py-16 bg-slate-900/30 rounded-2xl border border-slate-800">
-            <i class="fa-solid fa-film text-5xl text-slate-700 mb-4"></i>
-            <h3 class="text-lg font-medium text-slate-300">Keine Vorstellungen gefunden</h3>
-            <p class="text-sm text-slate-500 mt-1 max-w-md mx-auto">Versuche deine Filterkriterien oder den Suchbegriff anzupassen, um Ergebnisse für die nächsten Tage zu sehen.</p>
-            <button id="reset-filters-btn" class="mt-4 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm rounded-xl border border-slate-700 transition-colors">
-                Filter zurücksetzen
-            </button>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-800/80 py-8 mt-12 text-slate-400 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-            <div>
-                <p class="font-semibold text-slate-300">Hamburg Kinoprogramm Aggregator</p>
-                <p class="text-xs text-slate-500 mt-0.5">Automatische Zusammenstellung für Independent- & Arthouse-Kinos in Hamburg.</p>
-            </div>
-            <div class="text-xs text-slate-500 max-w-md">
-                <p>Hinweis: Cineville ist eine eingetragene Marke. Alle Angaben ohne Gewähr. Das Programm aktualisiert sich automatisch alle 15 Minuten.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript Application Logic -->
     <script>
-        // --- 1. CONFIGURATION & DATA STRUCTURES ---
-
-        const CINEMAS = [
-            { id: '3001', name: '3001 Kino', cineville: true, address: 'Schanzenstraße 75', district: 'Sternschanze' },
-            { id: 'abaton', name: 'Abaton-Kino', cineville: true, address: 'Allende-Platz 3', district: 'Rotherbaum' },
-            { id: 'bmovie', name: 'B-Movie', cineville: true, address: 'Brigittenstraße 5', district: 'St. Pauli' },
-            { id: 'filmraum', name: 'filmRaum', cineville: true, address: 'Müggenkampstraße 45', district: 'Eimsbüttel' },
-            { id: 'nestkino', name: 'nestkino Studio Kino', cineville: true, address: 'Bernstorffstraße 93', district: 'Altona' },
-            { id: 'zeise', name: 'Zeise Kino', cineville: true, address: 'Friedensallee 7-9', district: 'Ottensen' },
-            { id: 'savoy', name: 'Savoy Filmtheater', cineville: false, address: 'Steindamm 54', district: 'St. Georg' },
-            { id: 'metropolis', name: 'Metropolis', cineville: false, address: 'Kleine Theaterstraße 10', district: 'Neustadt' },
-            { id: 'passage', name: 'Passage', cineville: false, address: 'Mönckebergstraße 17', district: 'Altstadt' },
-            { id: 'holi', name: 'Holi', cineville: false, address: 'Schlankreye 69', district: 'Eimsbüttel' }
-        ];
-
-        // Generate Dates for Today, Tomorrow, Day After Tomorrow
-        function generateDates() {
-            const dates = [];
-            const today = new Date();
-            const daysOfWeek = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
-            const months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
-
-            for (let i = 0; i < 3; i++) {
-                const d = new Date(today);
-                d.setDate(today.getDate() + i);
-                
-                let label = '';
-                if (i === 0) label = 'Heute';
-                else if (i === 1) label = 'Morgen';
-                else label = `${daysOfWeek[d.getDay()]}.`;
-
-                const isoDate = d.toISOString().split('T')[0];
-                const formattedDate = `${d.getDate()}. ${months[d.getMonth()]}`;
-
-                dates.push({
-                    index: i,
-                    iso: isoDate,
-                    dayName: label,
-                    dateStr: formattedDate
-                });
-            }
-            return dates;
-        }
-
-        const DATES = generateDates();
-
-        // Sample Movies Database with images and metadata
-        const MOVIES_DB = [
-            {
-                id: 'm1',
-                title: 'Zone of Interest',
-                director: 'Jonathan Glazer',
-                duration: '105 Min.',
-                genre: 'Drama / Historie',
-                poster: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80',
-                rating: 'FSK 12'
-            },
-            {
-                id: 'm2',
-                title: 'Anatomie eines Falls',
-                director: 'Justine Triet',
-                duration: '151 Min.',
-                genre: 'Thriller / Krimi',
-                poster: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80',
-                rating: 'FSK 12'
-            },
-            {
-                id: 'm3',
-                title: 'Dune: Part Two',
-                director: 'Denis Villeneuve',
-                duration: '166 Min.',
-                genre: 'Sci-Fi / Abenteuer',
-                poster: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80',
-                rating: 'FSK 12'
-            },
-            {
-                id: 'm4',
-                title: 'Perfect Days',
-                director: 'Wim Wenders',
-                duration: '124 Min.',
-                genre: 'Drama',
-                poster: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80',
-                rating: 'FSK 0'
-            },
-            {
-                id: 'm5',
-                title: 'Poor Things',
-                director: 'Yorgos Lanthimos',
-                duration: '141 Min.',
-                genre: 'Komödie / Fantasy',
-                poster: 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80',
-                rating: 'FSK 16'
-            },
-            {
-                id: 'm6',
-                title: 'Drive-Away Dolls',
-                director: 'Ethan Coen',
-                duration: '84 Min.',
-                genre: 'Roadmovie / Komödie',
-                poster: 'https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=600&q=80',
-                rating: 'FSK 16'
-            }
-        ];
-
-        // Languages & Formats
-        const FORMATS = ['OmU', 'OV', 'DF', 'OmU (Engl. UT)'];
-
-        // --- 2. STATE MANAGEMENT ---
-        let state = {
-            selectedDateIso: DATES[0].iso,
-            selectedCinemaIds: CINEMAS.map(c => c.id), // Default: All selected
-            searchQuery: '',
-            screeningsData: []
+        // Kinos und ob sie Cineville unterstützen
+        const cinemasConfig = {
+            "3001 Kino": true,
+            "Abaton-Kino": true,
+            "B-Movie": true,
+            "filmRaum": true,
+            "nestkino Studio Kino": true,
+            "Zeise Kino": true,
+            "Savoy Filmtheater": false,
+            "Metropolis": false,
+            "Passage": false,
+            "Holi": false
         };
 
-        // --- 3. GENERATE DYNAMIC PROGRAM (SIMULATED BACKEND/SCRAPER) ---
-        function generateMockScreenings() {
-            const screenings = [];
-            let idCounter = 1;
+        let allShowtimes = [];
+        let selectedDate = '';
+        let selectedCinemas = Object.keys(cinemasConfig);
+        let cinevilleOnlyMode = false;
 
-            DATES.forEach(dateObj => {
-                CINEMAS.forEach(cinema => {
-                    // Decide how many movies run in this cinema today (2-4 movies)
-                    const numMovies = Math.floor(Math.random() * 3) + 2;
-                    const shuffledMovies = [...MOVIES_DB].sort(() => 0.5 - Math.random());
+        // Beispieldaten (werden später durch scraper.py / program.json ersetzt)
+        const sampleData = [
+            { id: 1, title: "Zone of Interest", genre: "Drama / Historie", director: "Jonathan Glazer", duration: "105 Min.", cinema: "3001 Kino", date: getOffsetDate(0), time: "17:45", room: "Saal 3", format: "OmU", link: "#" },
+            { id: 2, title: "Zone of Interest", genre: "Drama / Historie", director: "Jonathan Glazer", duration: "105 Min.", cinema: "Zeise Kino", date: getOffsetDate(0), time: "20:15", room: "Kino 1", format: "OmU", link: "#" },
+            { id: 3, title: "Poor Things", genre: "Komödie / Fantasy", director: "Yorgos Lanthimos", duration: "141 Min.", cinema: "3001 Kino", date: getOffsetDate(0), time: "18:45", room: "Saal 2", format: "OV", link: "#" },
+            { id: 4, title: "Perfect Days", genre: "Drama", director: "Wim Wenders", duration: "124 Min.", cinema: "Abaton-Kino", date: getOffsetDate(0), time: "17:15", room: "Saal 1", format: "OmU", link: "#" },
+            { id: 5, title: "Perfect Days", genre: "Drama", director: "Wim Wenders", duration: "124 Min.", cinema: "Zeise Kino", date: getOffsetDate(1), time: "19:30", room: "Kino 2", format: "OmU", link: "#" },
+            { id: 6, title: "Anatomie eines Falls", genre: "Thriller", director: "Justine Triet", duration: "151 Min.", cinema: "Abaton-Kino", date: getOffsetDate(1), time: "20:00", room: "Saal 2", format: "DF", link: "#" },
+            { id: 7, title: "Klassiker der Moderne", genre: "Retrospektive", director: "Diverse", duration: "90 Min.", cinema: "Metropolis", date: getOffsetDate(2), time: "17:00", room: "Hauptsaal", format: "OV", link: "#" }
+        ];
 
-                    for (let i = 0; i < numMovies; i++) {
-                        const movie = shuffledMovies[i];
-                        const times = [];
-                        
-                        // Pick 1-3 showtimes
-                        const showCount = Math.floor(Math.random() * 2) + 1;
-                        const possibleHours = [15, 17, 18, 20, 21];
-                        
-                        for(let t=0; t < showCount; t++) {
-                            const hr = possibleHours[(i + t + Math.floor(Math.random()*2)) % possibleHours.length];
-                            const min = Math.random() > 0.5 ? '15' : '45';
-                            times.push(`${hr}:${min}`);
-                        }
+        function getOffsetDate(days) {
+            const d = new Date();
+            d.setDate(d.getDate() + days);
+            return d.toISOString().split('T')[0];
+        }
 
-                        // Deduplicate and sort times
-                        const uniqueTimes = [...new Set(times)].sort();
+        async function loadProgram() {
+            try {
+                const response = await fetch('program.json');
+                if (!response.ok) throw new Error();
+                allShowtimes = await response.json();
+            } catch (e) {
+                // Fallback falls program.json noch nicht existiert
+                allShowtimes = sampleData;
+            }
+            initApp();
+        }
 
-                        screenings.push({
-                            id: `sc_${idCounter++}`,
-                            dateIso: dateObj.iso,
-                            cinemaId: cinema.id,
-                            movieId: movie.id,
-                            movieTitle: movie.title,
-                            director: movie.director,
-                            duration: movie.duration,
-                            genre: movie.genre,
-                            poster: movie.poster,
-                            rating: movie.rating,
-                            times: uniqueTimes,
-                            hall: `Saal ${Math.floor(Math.random() * 3) + 1}`,
-                            langTag: FORMATS[Math.floor(Math.random() * FORMATS.length)]
-                        });
+        function initApp() {
+            setupDates();
+            setupCinemas();
+            filterMovies();
+        }
+
+        function setupDates() {
+            const dateRow = document.getElementById('dateFilterRow');
+            dateRow.innerHTML = '';
+            
+            for (let i = 0; i < 3; i++) {
+                const d = new Date();
+                d.setDate(d.getDate() + i);
+                const dateStr = d.toISOString().split('T')[0];
+                const label = i === 0 ? 'Heute' : i === 1 ? 'Morgen' : d.toLocaleDateString('de-DE', { weekday: 'short', day: 'numeric', month: 'short' });
+                
+                if (i === 0 && !selectedDate) selectedDate = dateStr;
+
+                const btn = document.createElement('button');
+                btn.className = `btn-filter ${selectedDate === dateStr ? 'active' : ''}`;
+                btn.innerText = label;
+                btn.onclick = () => {
+                    selectedDate = dateStr;
+                    document.querySelectorAll('#dateFilterRow .btn-filter').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    filterMovies();
+                };
+                dateRow.appendChild(btn);
+            }
+        }
+
+        function setupCinemas() {
+            const cinemaRow = document.getElementById('cinemaFilterRow');
+            cinemaRow.innerHTML = '';
+
+            Object.keys(cinemasConfig).forEach(cinema => {
+                const btn = document.createElement('button');
+                btn.className = `btn-filter ${selectedCinemas.includes(cinema) ? 'active' : ''}`;
+                btn.innerText = cinema;
+                btn.onclick = () => {
+                    if (selectedCinemas.includes(cinema)) {
+                        selectedCinemas = selectedCinemas.filter(c => c !== cinema);
+                        btn.classList.remove('active');
+                    } else {
+                        selectedCinemas.push(cinema);
+                        btn.classList.add('active');
                     }
+                    filterMovies();
+                };
+                cinemaRow.appendChild(btn);
+            });
+        }
+
+        function toggleAllCinemas(select) {
+            if (select) {
+                selectedCinemas = Object.keys(cinemasConfig);
+            } else {
+                selectedCinemas = [];
+            }
+            document.querySelectorAll('#cinemaFilterRow .btn-filter').forEach(btn => {
+                if (select) btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+            filterMovies();
+        }
+
+        function toggleCinevilleFilter() {
+            cinevilleOnlyMode = !cinevilleOnlyMode;
+            const toggleText = document.getElementById('cinevilleToggleText');
+            
+            if (cinevilleOnlyMode) {
+                toggleText.style.color = 'var(--cineville)';
+                toggleText.style.fontWeight = 'bold';
+                selectedCinemas = Object.keys(cinemasConfig).filter(c => cinemasConfig[c]);
+            } else {
+                toggleText.style.color = 'var(--text-muted)';
+                toggleText.style.fontWeight = 'normal';
+                selectedCinemas = Object.keys(cinemasConfig);
+            }
+
+            // Buttons aktualisieren
+            const buttons = document.querySelectorAll('#cinemaFilterRow .btn-filter');
+            buttons.forEach(btn => {
+                if (selectedCinemas.includes(btn.innerText)) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            filterMovies();
+        }
+
+        function filterMovies() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+            // 1. Filtern nach Datum & Kinos & Suchbegriff
+            const filtered = allShowtimes.filter(item => {
+                if (item.date !== selectedDate) return false;
+                if (!selectedCinemas.includes(item.cinema)) return false;
+                if (searchTerm && !item.title.toLowerCase().includes(searchTerm) && !item.director.toLowerCase().includes(searchTerm) && !item.genre.toLowerCase().includes(searchTerm)) return false;
+                return true;
+            });
+
+            // 2. Gruppieren nach Film (Titel)
+            const groupedMovies = {};
+            filtered.forEach(item => {
+                if (!groupedMovies[item.title]) {
+                    groupedMovies[item.title] = {
+                        title: item.title,
+                        genre: item.genre,
+                        director: item.director,
+                        duration: item.duration,
+                        showtimesByCinema: {}
+                    };
+                }
+                if (!groupedMovies[item.title].showtimesByCinema[item.cinema]) {
+                    groupedMovies[item.title].showtimesByCinema[item.cinema] = [];
+                }
+                groupedMovies[item.title].showtimesByCinema[item.cinema].push({
+                    time: item.time,
+                    room: item.room,
+                    format: item.format,
+                    link: item.link
                 });
             });
 
-            return screenings;
+            renderMovies(Object.values(groupedMovies));
         }
 
-        // --- 4. RENDER UI COMPONENTS ---
-
-        // Render Date Buttons
-        function renderDateButtons() {
-            const container = document.getElementById('date-buttons-container');
+        function renderMovies(movies) {
+            const container = document.getElementById('movieList');
             container.innerHTML = '';
 
-            DATES.forEach(d => {
-                const isActive = state.selectedDateIso === d.iso;
-                const btn = document.createElement('button');
-                btn.className = `px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-2 ${
-                    isActive 
-                    ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white shadow-lg shadow-red-600/30 ring-2 ring-red-500/50' 
-                    : 'bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700/80'
-                }`;
-                btn.innerHTML = `
-                    <span class="font-bold">${d.dayName}</span>
-                    <span class="text-xs ${isActive ? 'text-red-100' : 'text-slate-400'}">(${d.dateStr})</span>
-                `;
-                btn.onclick = () => {
-                    state.selectedDateIso = d.iso;
-                    renderDateButtons();
-                    renderScreenings();
-                };
-                container.appendChild(btn);
-            });
-        }
-
-        // Render Cinema Toggle Buttons
-        function renderCinemaButtons() {
-            const container = document.getElementById('cinema-buttons-container');
-            container.innerHTML = '';
-
-            CINEMAS.forEach(cinema => {
-                const isSelected = state.selectedCinemaIds.includes(cinema.id);
-                const btn = document.createElement('button');
-                
-                // Styling based on state and Cineville membership
-                let baseStyle = "px-3 py-2 rounded-xl text-xs sm:text-sm font-medium text-left transition-all duration-150 flex flex-col justify-between border relative overflow-hidden group ";
-                
-                if (isSelected) {
-                    baseStyle += "bg-slate-800 border-slate-600 text-white shadow-md ";
-                } else {
-                    baseStyle += "bg-slate-900/40 border-slate-800/80 text-slate-500 hover:text-slate-400 hover:border-slate-700 ";
-                }
-
-                btn.className = baseStyle;
-
-                btn.innerHTML = `
-                    <div class="flex items-center justify-between w-full mb-1">
-                        <span class="font-semibold truncate pr-1 ${isSelected ? 'text-slate-100' : 'text-slate-400'}">${cinema.name}</span>
-                        <div class="w-4 h-4 rounded-full flex items-center justify-center text-[10px] ${isSelected ? 'bg-red-500 text-white' : 'bg-slate-800 text-slate-600'}">
-                            ${isSelected ? '<i class="fa-solid fa-check"></i>' : ''}
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between text-[11px] w-full">
-                        <span class="text-slate-500 truncate">${cinema.district}</span>
-                        ${cinema.cineville ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-cineville/20 text-cineville border border-cineville/30">CINEVILLE</span>' : ''}
-                    </div>
-                `;
-
-                btn.onclick = () => {
-                    if (isSelected) {
-                        state.selectedCinemaIds = state.selectedCinemaIds.filter(id => id !== cinema.id);
-                    } else {
-                        state.selectedCinemaIds.push(cinema.id);
-                    }
-                    renderCinemaButtons();
-                    renderScreenings();
-                };
-
-                container.appendChild(btn);
-            });
-        }
-
-        // Render Cards Matrix
-        function renderScreenings() {
-            const container = document.getElementById('movie-list');
-            const emptyState = document.getElementById('empty-state');
-            const countLabel = document.getElementById('results-count');
-
-            // Filter Screenings
-            const filtered = state.screeningsData.filter(s => {
-                const matchDate = s.dateIso === state.selectedDateIso;
-                const matchCinema = state.selectedCinemaIds.includes(s.cinemaId);
-                const matchSearch = state.searchQuery === '' || 
-                    s.movieTitle.toLowerCase().includes(state.searchQuery.toLowerCase()) ||
-                    s.director.toLowerCase().includes(state.searchQuery.toLowerCase());
-                
-                return matchDate && matchCinema && matchSearch;
-            });
-
-            // Update Counter
-            countLabel.innerHTML = `Zeige <strong>${filtered.length}</strong> Vorstellungen`;
-
-            if (filtered.length === 0) {
-                container.innerHTML = '';
-                emptyState.classList.remove('hidden');
+            if (movies.length === 0) {
+                container.innerHTML = `<div class="no-results">Keine Vorstellungen für diese Auswahl gefunden.</div>`;
                 return;
             }
 
-            emptyState.classList.add('hidden');
-            container.innerHTML = '';
+            movies.forEach(movie => {
+                const item = document.createElement('div');
+                item.className = 'movie-item';
 
-            filtered.forEach(s => {
-                const cinemaObj = CINEMAS.find(c => c.id === s.cinemaId);
-                
-                const card = document.createElement('div');
-                card.className = "bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between shadow-lg group";
+                // Prüfen ob irgendein Kino dieses Films Cineville unterstützt
+                const isCinevilleMovie = Object.keys(movie.showtimesByCinema).some(cinema => cinemasConfig[cinema]);
 
-                card.innerHTML = `
-                    <div>
-                        <!-- Header / Poster Banner -->
-                        <div class="relative h-44 w-full overflow-hidden bg-slate-800">
-                            <img src="${s.poster}" alt="${s.movieTitle}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                            
-                            <!-- Badges Top -->
-                            <div class="absolute top-3 left-3 right-3 flex justify-between items-start gap-2">
-                                <span class="bg-slate-950/80 backdrop-blur-md text-xs px-2.5 py-1 rounded-lg border border-slate-700/60 font-medium text-slate-200">
-                                    ${s.langTag}
-                                </span>
-                                ${cinemaObj?.cineville ? `
-                                    <span class="bg-cineville text-white font-black text-[10px] tracking-wider px-2 py-1 rounded-md shadow-lg shadow-cineville/40 uppercase">
-                                        Cineville Abo
-                                    </span>
-                                ` : ''}
+                // HTML für Kinos und Vorstellungen im Accordion
+                let cinemasHtml = '';
+                Object.keys(movie.showtimesByCinema).forEach(cinema => {
+                    const timesHtml = movie.showtimesByCinema[cinema].map(st => `
+                        <a href="${st.link}" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="showtime-chip" title="Saal: ${st.room}">
+                                <span class="showtime-time">${st.time}</span>
+                                <span class="showtime-format">${st.format}</span>
                             </div>
+                        </a>
+                    `).join('');
 
-                            <!-- Title on Image -->
-                            <div class="absolute bottom-3 left-3 right-3">
-                                <span class="text-xs text-amber-400 font-semibold tracking-wide uppercase">${s.genre}</span>
-                                <h3 class="text-xl font-bold text-white leading-tight drop-shadow-md truncate">${s.movieTitle}</h3>
+                    cinemasHtml += `
+                        <div class="showtime-group">
+                            <div class="showtime-cinema-name">
+                                📍 ${cinema} ${cinemasConfig[cinema] ? '<span class="badge badge-cineville" style="font-size:0.6rem;">Cineville</span>' : ''}
                             </div>
+                            <div class="showtimes-chips">${timesHtml}</div>
                         </div>
+                    `;
+                });
 
-                        <!-- Movie Metadata & Cinema Info -->
-                        <div class="p-4 space-y-3">
-                            <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-2.5">
-                                <span><i class="fa-solid fa-clapperboard mr-1 text-slate-500"></i> ${s.director}</span>
-                                <span><i class="fa-regular fa-clock mr-1 text-slate-500"></i> ${s.duration}</span>
-                            </div>
-
-                            <div class="flex items-start justify-between gap-2 pt-1">
-                                <div>
-                                    <h4 class="font-semibold text-slate-200 text-sm flex items-center gap-1.5">
-                                        ${cinemaObj?.name}
-                                    </h4>
-                                    <p class="text-xs text-slate-400">${cinemaObj?.address} (${cinemaObj?.district})</p>
-                                </div>
-                                <span class="text-[11px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700/50">${s.hall}</span>
-                            </div>
+                item.innerHTML = `
+                    <div class="movie-header" onclick="toggleAccordion(this)">
+                        <div class="movie-title-area">
+                            <span class="movie-title">${movie.title}</span>
+                            <span class="movie-meta">${movie.genre} • ${movie.duration} • Regie: ${movie.director}</span>
+                        </div>
+                        <div class="movie-badges">
+                            ${isCinevilleMovie ? '<span class="badge badge-cineville">Cineville</span>' : ''}
+                            <span class="expand-icon">▼</span>
                         </div>
                     </div>
-
-                    <!-- Showtimes Footer -->
-                    <div class="p-4 pt-0">
-                        <div class="mt-2 bg-slate-950/60 p-2.5 rounded-xl border border-slate-800/80">
-                            <span class="text-[11px] uppercase tracking-wider text-slate-400 font-medium block mb-2">Vorstellungen:</span>
-                            <div class="flex flex-wrap gap-2">
-                                ${s.times.map(t => `
-                                    <button class="bg-slate-800 hover:bg-red-600 hover:text-white text-slate-200 font-semibold text-xs px-3 py-1.5 rounded-lg border border-slate-700/80 hover:border-red-500 transition-all shadow-sm">
-                                        ${t} Uhr
-                                    </button>
-                                `).join('')}
-                            </div>
-                        </div>
+                    <div class="movie-details">
+                        ${cinemasHtml}
                     </div>
                 `;
-
-                container.appendChild(card);
+                container.appendChild(item);
             });
         }
 
-        // --- 5. EVENT HANDLERS & HELPERS ---
-
-        function setupEventListeners() {
-            // Search Input
-            const searchInput = document.getElementById('search-input');
-            searchInput.addEventListener('input', (e) => {
-                state.searchQuery = e.target.value.trim();
-                renderScreenings();
-            });
-
-            // Select All Cinemas Button
-            document.getElementById('select-all-cinemas').addEventListener('click', () => {
-                state.selectedCinemaIds = CINEMAS.map(c => c.id);
-                renderCinemaButtons();
-                renderScreenings();
-            });
-
-            // Quick Toggle: Only Cineville Cinemas
-            document.getElementById('toggle-cineville-only').addEventListener('click', () => {
-                state.selectedCinemaIds = CINEMAS.filter(c => c.cineville).map(c => c.id);
-                renderCinemaButtons();
-                renderScreenings();
-            });
-
-            // Reset Filters
-            document.getElementById('reset-filters-btn').addEventListener('click', () => {
-                state.selectedCinemaIds = CINEMAS.map(c => c.id);
-                state.searchQuery = '';
-                document.getElementById('search-input').value = '';
-                renderCinemaButtons();
-                renderScreenings();
-            });
-
-            // Manual Refresh Simulation
-            document.getElementById('refresh-btn').addEventListener('click', () => {
-                triggerDataUpdate();
-            });
+        function toggleAccordion(headerEl) {
+            const parent = headerEl.parentElement;
+            parent.classList.toggle('open');
         }
 
-        // Simulate Dynamic Live Updates
-        function triggerDataUpdate() {
-            const updateBtn = document.getElementById('refresh-btn');
-            const statusText = document.getElementById('last-update');
-            
-            updateBtn.classList.add('animate-spin');
-            statusText.innerText = "Aktualisiere Daten...";
-
-            setTimeout(() => {
-                state.screeningsData = generateMockScreenings();
-                renderScreenings();
-                
-                updateBtn.classList.remove('animate-spin');
-                const now = new Date();
-                statusText.innerText = `Aktualisiert: ${now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
-            }, 600);
-        }
-
-        // Automatic Background Sync Interval (Simulates Cron/Live-API)
-        function startAutoUpdateTimer() {
-            // Refresh every 15 minutes automatically
-            setInterval(() => {
-                triggerDataUpdate();
-            }, 15 * 60 * 1000);
-        }
-
-        // --- 6. INITIALIZATION ---
-        window.addEventListener('DOMContentLoaded', () => {
-            // Generate Initial Data
-            state.screeningsData = generateMockScreenings();
-
-            // Render Views
-            renderDateButtons();
-            renderCinemaButtons();
-            renderScreenings();
-
-            // Setup Interactivity
-            setupEventListeners();
-            startAutoUpdateTimer();
-        });
+        loadProgram();
     </script>
 </body>
 </html>
