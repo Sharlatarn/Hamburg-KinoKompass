@@ -8,297 +8,109 @@
         :root {
             --bg-main: #0f172a;
             --bg-card: #1e293b;
-            --bg-card-hover: #273548;
             --accent: #f43f5e;
-            --accent-hover: #e11d48;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --border: #334155;
             --cineville: #0ea5e9;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-main);
-            color: var(--text-main);
-            min-height: 100vh;
-            padding: 20px;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+        body { background-color: var(--bg-main); color: var(--text-main); min-height: 100vh; padding: 20px; }
 
         header {
-            max-width: 1200px;
-            margin: 0 auto 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 15px;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 15px;
+            max-width: 1200px; margin: 0 auto 20px auto; display: flex;
+            flex-wrap: wrap; justify-content: space-between; align-items: center;
+            gap: 15px; border-bottom: 1px solid var(--border); padding-bottom: 15px;
         }
-
-        h1 {
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
+        h1 { font-size: 1.5rem; display: flex; align-items: center; gap: 10px; }
         .search-box input {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            color: var(--text-main);
-            padding: 8px 14px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            width: 250px;
-            outline: none;
+            background: var(--bg-card); border: 1px solid var(--border); color: var(--text-main);
+            padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; width: 250px; outline: none;
         }
+        .search-box input:focus { border-color: var(--accent); }
 
-        .search-box input:focus {
-            border-color: var(--accent);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
+        .container { max-width: 1200px; margin: 0 auto; }
         .filters-section {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 20px;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 12px; padding: 15px; margin-bottom: 20px;
         }
-
         .filter-group-title {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--text-muted);
-            margin-bottom: 8px;
+            font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;
+            color: var(--text-muted); margin-bottom: 8px;
         }
-
-        .filter-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 15px;
-        }
-
-        .filter-row:last-child {
-            margin-bottom: 0;
-        }
+        .filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
+        .filter-row:last-child { margin-bottom: 0; }
 
         .btn-filter {
-            background: var(--bg-main);
-            border: 1px solid var(--border);
-            color: var(--text-main);
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            cursor: pointer;
-            transition: all 0.2s;
+            background: var(--bg-main); border: 1px solid var(--border); color: var(--text-main);
+            padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s;
         }
+        .btn-filter.active { background: var(--accent); border-color: var(--accent); color: white; }
+        .btn-filter.active-cineville { background: var(--cineville); border-color: var(--cineville); color: white; }
 
-        .btn-filter.active {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: white;
-        }
+        .action-links { display: flex; justify-content: flex-end; gap: 15px; font-size: 0.8rem; margin-bottom: 15px; }
+        .action-links span { color: var(--text-muted); cursor: pointer; }
+        .action-links span:hover { color: var(--text-main); text-decoration: underline; }
 
-        .btn-filter.active-cineville {
-            background: var(--cineville);
-            border-color: var(--cineville);
-            color: white;
-        }
-
-        .action-links {
-            display: flex;
-            justify-content: flex-end;
-            gap: 15px;
-            font-size: 0.8rem;
-            margin-bottom: 15px;
-        }
-
-        .action-links span {
-            color: var(--text-muted);
-            cursor: pointer;
-        }
-
-        .action-links span:hover {
-            color: var(--text-main);
-            text-decoration: underline;
-        }
-
-        /* Movie List Layout (Compact & Accordion) */
-        .movie-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
+        .movie-list { display: flex; flex-direction: column; gap: 10px; }
         .movie-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: border-color 0.2s;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 10px; overflow: hidden; transition: border-color 0.2s;
         }
-
-        .movie-item:hover {
-            border-color: var(--text-muted);
-        }
-
+        .movie-item:hover { border-color: var(--text-muted); }
         .movie-header {
-            padding: 12px 16px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            user-select: none;
+            padding: 12px 16px; display: flex; justify-content: space-between;
+            align-items: center; cursor: pointer; user-select: none;
         }
+        .movie-title-area { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .movie-title { font-size: 1rem; font-weight: 600; }
+        .movie-meta { font-size: 0.8rem; color: var(--text-muted); }
+        .movie-badges { display: flex; gap: 6px; align-items: center; }
+        
+        .badge { font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; font-weight: 600; text-transform: uppercase; }
+        .badge-cineville { background: var(--cineville); color: white; }
+        .expand-icon { font-size: 0.8rem; color: var(--text-muted); transition: transform 0.2s; }
+        .movie-item.open .expand-icon { transform: rotate(180deg); }
 
-        .movie-title-area {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .movie-title {
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .movie-meta {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        .movie-badges {
-            display: flex;
-            gap: 6px;
-            align-items: center;
-        }
-
-        .badge {
-            font-size: 0.7rem;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .badge-cineville {
-            background: var(--cineville);
-            color: white;
-        }
-
-        .expand-icon {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            transition: transform 0.2s;
-        }
-
-        .movie-item.open .expand-icon {
-            transform: rotate(180deg);
-        }
-
-        /* Expanded Showtimes Details */
         .movie-details {
-            display: none;
-            padding: 0 16px 16px 16px;
-            border-top: 1px solid var(--border);
-            background: rgba(15, 23, 42, 0.3);
+            display: none; padding: 0 16px 16px 16px;
+            border-top: 1px solid var(--border); background: rgba(15, 23, 42, 0.3);
         }
-
-        .movie-item.open .movie-details {
-            display: block;
-        }
-
-        .showtime-group {
-            margin-top: 12px;
-        }
-
+        .movie-item.open .movie-details { display: block; }
+        .showtime-group { margin-top: 12px; }
         .showtime-cinema-name {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-muted);
-            margin-bottom: 6px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
+            font-size: 0.85rem; font-weight: 600; color: var(--text-muted);
+            margin-bottom: 6px; display: flex; align-items: center; gap: 6px;
         }
-
-        .showtimes-chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
+        .showtimes-chips { display: flex; flex-wrap: wrap; gap: 8px; }
         .showtime-chip {
-            background: var(--bg-main);
-            border: 1px solid var(--border);
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            background: var(--bg-main); border: 1px solid var(--border);
+            padding: 4px 10px; border-radius: 6px; font-size: 0.8rem;
+            display: flex; align-items: center; gap: 8px;
         }
-
-        .showtime-time {
-            font-weight: 600;
-            color: var(--text-main);
-        }
-
-        .showtime-format {
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            background: var(--border);
-            padding: 1px 4px;
-            border-radius: 3px;
-        }
-
-        .no-results {
-            text-align: center;
-            padding: 40px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
+        .showtime-time { font-weight: 600; color: var(--text-main); }
+        .showtime-format { font-size: 0.7rem; color: var(--text-muted); background: var(--border); padding: 1px 4px; border-radius: 3px; }
+        .no-results { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem; }
 
         @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            .search-box input {
-                width: 100%;
-            }
+            header { flex-direction: column; align-items: stretch; }
+            .search-box input { width: 100%; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>🎬 Kino Hamburg <span style="font-size:0.8rem; color:var(--text-muted); font-weight:normal;">Kompakt-Programm</span></h1>
+        <h1>🎬 Kino Hamburg <span style="font-size:0.8rem; color:var(--text-muted); font-weight:normal;">7-Tage-Programm</span></h1>
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="Film, Regie oder Genre suchen..." oninput="filterMovies()">
         </div>
     </header>
 
     <div class="container">
-        <!-- Filter Box -->
         <div class="filters-section">
-            <div class="filter-group-title">📅 Datum auswählen</div>
+            <div class="filter-group-title">📅 Datum auswählen (7 Tage)</div>
             <div class="filter-row" id="dateFilterRow"></div>
 
             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
@@ -312,25 +124,14 @@
             <div class="filter-row" id="cinemaFilterRow" style="margin-top: 8px;"></div>
         </div>
 
-        <!-- Movie List Container -->
-        <div id="movieList" class="movie-list">
-            <!-- Wird dynamisch gefüllt -->
-        </div>
+        <div id="movieList" class="movie-list"></div>
     </div>
 
     <script>
-        // Kinos und ob sie Cineville unterstützen
         const cinemasConfig = {
-            "3001 Kino": true,
-            "Abaton-Kino": true,
-            "B-Movie": true,
-            "filmRaum": true,
-            "nestkino Studio Kino": true,
-            "Zeise Kino": true,
-            "Savoy Filmtheater": false,
-            "Metropolis": false,
-            "Passage": false,
-            "Holi": false
+            "3001 Kino": true, "Abaton-Kino": true, "B-Movie": true,
+            "filmRaum": true, "nestkino Studio Kino": true, "Zeise Kino": true,
+            "Savoy Filmtheater": false, "Metropolis": false, "Passage": false, "Holi": false
         };
 
         let allShowtimes = [];
@@ -338,31 +139,13 @@
         let selectedCinemas = Object.keys(cinemasConfig);
         let cinevilleOnlyMode = false;
 
-        // Beispieldaten (werden später durch scraper.py / program.json ersetzt)
-        const sampleData = [
-            { id: 1, title: "Zone of Interest", genre: "Drama / Historie", director: "Jonathan Glazer", duration: "105 Min.", cinema: "3001 Kino", date: getOffsetDate(0), time: "17:45", room: "Saal 3", format: "OmU", link: "#" },
-            { id: 2, title: "Zone of Interest", genre: "Drama / Historie", director: "Jonathan Glazer", duration: "105 Min.", cinema: "Zeise Kino", date: getOffsetDate(0), time: "20:15", room: "Kino 1", format: "OmU", link: "#" },
-            { id: 3, title: "Poor Things", genre: "Komödie / Fantasy", director: "Yorgos Lanthimos", duration: "141 Min.", cinema: "3001 Kino", date: getOffsetDate(0), time: "18:45", room: "Saal 2", format: "OV", link: "#" },
-            { id: 4, title: "Perfect Days", genre: "Drama", director: "Wim Wenders", duration: "124 Min.", cinema: "Abaton-Kino", date: getOffsetDate(0), time: "17:15", room: "Saal 1", format: "OmU", link: "#" },
-            { id: 5, title: "Perfect Days", genre: "Drama", director: "Wim Wenders", duration: "124 Min.", cinema: "Zeise Kino", date: getOffsetDate(1), time: "19:30", room: "Kino 2", format: "OmU", link: "#" },
-            { id: 6, title: "Anatomie eines Falls", genre: "Thriller", director: "Justine Triet", duration: "151 Min.", cinema: "Abaton-Kino", date: getOffsetDate(1), time: "20:00", room: "Saal 2", format: "DF", link: "#" },
-            { id: 7, title: "Klassiker der Moderne", genre: "Retrospektive", director: "Diverse", duration: "90 Min.", cinema: "Metropolis", date: getOffsetDate(2), time: "17:00", room: "Hauptsaal", format: "OV", link: "#" }
-        ];
-
-        function getOffsetDate(days) {
-            const d = new Date();
-            d.setDate(d.getDate() + days);
-            return d.toISOString().split('T')[0];
-        }
-
         async function loadProgram() {
             try {
                 const response = await fetch('program.json');
                 if (!response.ok) throw new Error();
                 allShowtimes = await response.json();
             } catch (e) {
-                // Fallback falls program.json noch nicht existiert
-                allShowtimes = sampleData;
+                allShowtimes = [];
             }
             initApp();
         }
@@ -377,7 +160,8 @@
             const dateRow = document.getElementById('dateFilterRow');
             dateRow.innerHTML = '';
             
-            for (let i = 0; i < 3; i++) {
+            // Schleife auf 7 Tage erweitert!
+            for (let i = 0; i < 7; i++) {
                 const d = new Date();
                 d.setDate(d.getDate() + i);
                 const dateStr = d.toISOString().split('T')[0];
@@ -421,14 +205,9 @@
         }
 
         function toggleAllCinemas(select) {
-            if (select) {
-                selectedCinemas = Object.keys(cinemasConfig);
-            } else {
-                selectedCinemas = [];
-            }
+            selectedCinemas = select ? Object.keys(cinemasConfig) : [];
             document.querySelectorAll('#cinemaFilterRow .btn-filter').forEach(btn => {
-                if (select) btn.classList.add('active');
-                else btn.classList.remove('active');
+                if (select) btn.classList.add('active'); else btn.classList.remove('active');
             });
             filterMovies();
         }
@@ -447,50 +226,36 @@
                 selectedCinemas = Object.keys(cinemasConfig);
             }
 
-            // Buttons aktualisieren
-            const buttons = document.querySelectorAll('#cinemaFilterRow .btn-filter');
-            buttons.forEach(btn => {
-                if (selectedCinemas.includes(btn.innerText)) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
+            document.querySelectorAll('#cinemaFilterRow .btn-filter').forEach(btn => {
+                if (selectedCinemas.includes(btn.innerText)) btn.classList.add('active');
+                else btn.classList.remove('active');
             });
-
             filterMovies();
         }
 
         function filterMovies() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
 
-            // 1. Filtern nach Datum & Kinos & Suchbegriff
             const filtered = allShowtimes.filter(item => {
                 if (item.date !== selectedDate) return false;
                 if (!selectedCinemas.includes(item.cinema)) return false;
-                if (searchTerm && !item.title.toLowerCase().includes(searchTerm) && !item.director.toLowerCase().includes(searchTerm) && !item.genre.toLowerCase().includes(searchTerm)) return false;
+                if (searchTerm && !item.title.toLowerCase().includes(searchTerm) && !item.director.toLowerCase().includes(searchTerm)) return false;
                 return true;
             });
 
-            // 2. Gruppieren nach Film (Titel)
             const groupedMovies = {};
             filtered.forEach(item => {
                 if (!groupedMovies[item.title]) {
                     groupedMovies[item.title] = {
-                        title: item.title,
-                        genre: item.genre,
-                        director: item.director,
-                        duration: item.duration,
-                        showtimesByCinema: {}
+                        title: item.title, genre: item.genre, director: item.director,
+                        duration: item.duration, showtimesByCinema: {}
                     };
                 }
                 if (!groupedMovies[item.title].showtimesByCinema[item.cinema]) {
                     groupedMovies[item.title].showtimesByCinema[item.cinema] = [];
                 }
                 groupedMovies[item.title].showtimesByCinema[item.cinema].push({
-                    time: item.time,
-                    room: item.room,
-                    format: item.format,
-                    link: item.link
+                    time: item.time, room: item.room, format: item.format, link: item.link
                 });
             });
 
@@ -502,18 +267,15 @@
             container.innerHTML = '';
 
             if (movies.length === 0) {
-                container.innerHTML = `<div class="no-results">Keine Vorstellungen für diese Auswahl gefunden.</div>`;
+                container.innerHTML = `<div class="no-results">Keine Vorstellungen für dieses Datum gefunden. Klicke auf einen anderen Tag oben in der Leiste!</div>`;
                 return;
             }
 
             movies.forEach(movie => {
                 const item = document.createElement('div');
                 item.className = 'movie-item';
-
-                // Prüfen ob irgendein Kino dieses Films Cineville unterstützt
                 const isCinevilleMovie = Object.keys(movie.showtimesByCinema).some(cinema => cinemasConfig[cinema]);
 
-                // HTML für Kinos und Vorstellungen im Accordion
                 let cinemasHtml = '';
                 Object.keys(movie.showtimesByCinema).forEach(cinema => {
                     const timesHtml = movie.showtimesByCinema[cinema].map(st => `
@@ -539,24 +301,21 @@
                     <div class="movie-header" onclick="toggleAccordion(this)">
                         <div class="movie-title-area">
                             <span class="movie-title">${movie.title}</span>
-                            <span class="movie-meta">${movie.genre} • ${movie.duration} • Regie: ${movie.director}</span>
+                            <span class="movie-meta">${movie.genre || ''} • ${movie.duration || ''} • Regie: ${movie.director || 'Unbekannt'}</span>
                         </div>
                         <div class="movie-badges">
                             ${isCinevilleMovie ? '<span class="badge badge-cineville">Cineville</span>' : ''}
                             <span class="expand-icon">▼</span>
                         </div>
                     </div>
-                    <div class="movie-details">
-                        ${cinemasHtml}
-                    </div>
+                    <div class="movie-details">${cinemasHtml}</div>
                 `;
                 container.appendChild(item);
             });
         }
 
         function toggleAccordion(headerEl) {
-            const parent = headerEl.parentElement;
-            parent.classList.toggle('open');
+            headerEl.parentElement.classList.toggle('open');
         }
 
         loadProgram();
