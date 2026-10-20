@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "title": "Sneak Preview",
+    "genre": "Arthouse / Drama",
+    "director": "",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-20",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "OmU",
+    "link": "https://www.zeise.de/programm",
+    "id": 1
+  },
+  {
+    "title": "sparen mit der zeise card",
+    "genre": "Arthouse / Drama",
+    "director": "",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-20",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "OmU",
+    "link": "https://www.zeise.de/programm",
+    "id": 2
+  },
+  {
+    "title": "Original Tuesday",
+    "genre": "Arthouse / Drama",
+    "director": "",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-20",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "OmU",
+    "link": "https://www.zeise.de/programm",
+    "id": 3
+  },
+  {
+    "title": "Facebook",
+    "genre": "Arthouse / Drama",
+    "director": "",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-20",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "OmU",
+    "link": "https://www.zeise.de/programm",
+    "id": 4
+  },
+  {
+    "title": "Öffnungszeiten",
+    "genre": "Arthouse / Drama",
+    "director": "",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-20",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "OmU",
+    "link": "https://www.zeise.de/programm",
+    "id": 5
+  }
+]
