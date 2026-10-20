@@ -1,0 +1,30 @@
+name: Update Kinoprogramm
+
+on:
+  schedule:
+    # Läuft jeden Tag um 04:00 Uhr morgens UTC
+    - cron: '0 4 * * *'
+  workflow_dispatch: # Erlaubt manuelles Starten per Klick
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v3
+
+      - name: Python einrichten
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Abfrage-Skript ausführen
+        run: python scraper.py
+
+      - name: Änderungen speichern & hochladen
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add program.json
+          git commit -m "Automatisches Update des Kinoprogramms" || exit 0
+          git push
