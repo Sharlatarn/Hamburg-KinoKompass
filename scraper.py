@@ -9,107 +9,97 @@ HEADERS = {
     'Accept-Language': 'de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7'
 }
 
-# Deine 10 Zielkinos und ihre Zuordnungs-Keywords auf critic.de
-TARGET_CINEMAS = {
-    "3001": "3001 Kino",
-    "abaton": "Abaton-Kino",
-    "b-movie": "B-Movie",
-    "filmraum": "filmRaum",
-    "studio kino": "Studio Kino",
-    "nestkino": "nestkino",
-    "zeise": "Zeise Kino",
-    "savoy": "Savoy Filmtheater",
-    "metropolis": "Metropolis",
-    "passage": "Passage",
-    "holi": "Holi"
+# Direkte URLs der Kinos bei critic.de (Beispiele für Hamburg)
+CINEMA_URLS = {
+    "3001": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
+    "Abaton": "https://abaton-hamburg.critic.de/kinoprogramm/",
+    "Alabama": "https://alabama-kino-hamburg.critic.de/kinoprogramm/",
+    "Astor Film Lounge": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
+    "B-Movie": "https://b-movie-hamburg.critic.de/kinoprogramm/",
+    "Elbe-Kino": "https://elbe-kino-hamburg.critic.de/kinoprogramm/",
+    "Filmraum": "https://filmraum-hamburg.critic.de/kinoprogramm/",
+    "Holi": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "Kinopolis Hafencity": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
+    "Koralle": "https://koralle-hamburg.critic.de/kinoprogramm/",
+    "Lichtmess": "https://lichtmess-hamburg.critic.de/kinoprogramm/",
+    "Metropolis": "https://metropolis-kino-im-planet-harburg-hamburg.critic.de/kinoprogramm/",
+    "Nestkino": "https://schanzenkino-73-hamburg.critic.de/kinoprogramm/",
+    "Passage": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
+    "Savoy": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "Studio Kino": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
+    "Zeise Kino": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
+    
 }
 
 def get_target_dates():
     today = datetime.now()
     return [(today + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(7)]
 
-def scrape_critic_hamburg():
-    url = "https://hamburg.critic.de/kinoprogramm/"
-    movies_data = []
+def scrape_cinema_page(cinema_name, url):
+    movies = []
     target_dates = get_target_dates()
-
+    
     try:
-        response = requests.get(url, headers=HEADERS, timeout=15)
+        response = requests.get(url, headers=HEADERS, timeout=10)
         if response.status_code != 200:
-            print(f"Fehler beim Abrufen: Statuscode {response.status_code}")
             return []
 
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Auf critic.de sind Filme in Blöcken/Tabellen strukturiert
-        movie_blocks = soup.select('.film, article, .movie-entry, table')
+        # Auf den Unterseiten sind Filme oft in Blöcken mit Titeln und Tabellen
+        # Wir suchen nach den Film-Überschriften oder Tabellen-Containern
+        film_elements = soup.select('h2, h3, .film-title, table')
         
-        for idx, block in enumerate(movie_blocks, start=1):
-            title_el = block.select_one('h2, h3, a.title, .film-title')
-            if not title_el:
-                continue
-            
-            raw_title = title_el.text.strip()
-            if not raw_title:
-                continue
-
-            # Regie/Genre/Details falls vorhanden
-            meta_el = block.select_one('.meta, .director, .genre')
-            meta_text = meta_el.text.strip() if meta_el else ""
-
-            # Kinos und Zeiten innerhalb des Filmblocks suchen
-            cinema_rows = block.select('.cinema-row, tr, .showtime-item')
-            
-            for row in cinema_rows:
-                row_text = row.text.strip()
-                
-                # Prüfen, ob eines unserer 10 Kinos in der Zeile genannt wird
-                matched_cinema = None
-                for keyword, official_name in TARGET_CINEMAS.items():
-                    if keyword.lower() in row_text.lower():
-                        matched_cinema = official_name
-                        break
-                
-                if not matched_cinema:
-                    continue
-
-                # Uhrzeiten auslesen (z.B. 17:30, 20:15)
-                times = re.findall(r'\b\d{1,2}:\d{2}\b', row_text)
-                
-                # Format (OmU, OV, DF) erkennen
-                fmt = "DF"
-                if "omu" in row_text.lower():
-                    fmt = "OmU"
-                elif "ov" in row_text.lower():
-                    fmt = "OV"
-
-                for show_time in times:
-                    movies_data.append({
-                        "id": len(movies_data) + 1,
-                        "title": raw_title,
-                        "genre": "Kino",
-                        "director": meta_text if meta_text else "K.A.",
-                        "duration": "",
-                        "cinema": matched_cinema,
-                        "date": target_dates[0], # Tagesaktueller Bezug
-                        "time": show_time,
-                        "room": "Saal",
-                        "format": fmt,
-                        "link": url
-                    })
-
+        current_title = "Unbekannter Film"
+        current_director = "Unbekannt"
+        
+        for el in film_elements:
+            text = el.text.strip()
+            if el.name in ['h2', 'h3']:
+                if len(text) > 2 and "Kinoprogramm" not in text:
+                    current_title = text
+            elif el.name == 'table':
+                # Tabellen enthalten die Wochentage und Uhrzeiten
+                rows = el.select('tr')
+                for row in rows:
+                    row_text = row.text.strip()
+                    times = re.findall(r'\b\d{1,2}:\d{2}\b', row_text)
+                    
+                    if times:
+                        # Wir weisen es standardmäßig dem heutigen oder den nächsten Tagen zu
+                        for t in times:
+                            movies.append({
+                                "title": current_title,
+                                "genre": "Programm",
+                                "director": current_director,
+                                "duration": "",
+                                "cinema": cinema_name,
+                                "date": target_dates[0], # Tagesaktuell einsortieren
+                                "time": t,
+                                "room": "Saal 1",
+                                "format": "OmU" if "omu" in row_text.lower() else "DF",
+                                "link": url
+                            })
+                            
     except Exception as e:
-        print(f"Fehler beim Scrapen von critic.de: {e}")
-
-    return movies_data
+        print(f"Fehler bei {cinema_name}: {e}")
+        
+    return movies
 
 def main():
-    movies = scrape_critic_hamburg()
+    all_movies = []
     
-    with open("program.json", "w", encoding="utf-8") as f:
-        json.dump(movies, f, ensure_ascii=False, indent=2)
+    for cinema_name, url in CINEMA_URLS.items():
+        all_movies.extend(scrape_cinema_page(cinema_name, url))
         
-    print(f"Scraping erfolgreich: {len(movies)} echte Vorstellungen von critic.de in program.json gespeichert.")
+    # Eindeutige IDs vergeben
+    for idx, movie in enumerate(all_movies, start=1):
+        movie["id"] = idx
+
+    with open("program.json", "w", encoding="utf-8") as f:
+        json.dump(all_movies, f, ensure_ascii=False, indent=2)
+        
+    print(f"Live-Scraping erfolgreich: {len(all_movies)} Vorstellungen gefunden.")
 
 if __name__ == "__main__":
     main()
