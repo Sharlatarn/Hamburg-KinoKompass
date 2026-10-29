@@ -5,7 +5,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
@@ -18,7 +18,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "21:00",
     "room": "Saal 1",
     "format": "DF",
@@ -26,26 +26,26 @@
     "id": 2
   },
   {
-    "title": "London (2)",
+    "title": "La Graciosa - Kanarische Träume (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
-    "time": "16:30",
+    "date": "2026-10-29",
+    "time": "17:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
     "id": 3
   },
   {
-    "title": "Materia Prima - New Energy - Old Powers (4)",
+    "title": "London (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
-    "time": "11:15",
+    "date": "2026-10-29",
+    "time": "16:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
@@ -57,21 +57,21 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
-    "time": "16:30",
+    "date": "2026-10-29",
+    "time": "11:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
     "id": 5
   },
   {
-    "title": "NAZA (4)",
+    "title": "Moscas - Fliegen und andere Gäste (4)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
-    "time": "18:30",
+    "date": "2026-10-29",
+    "time": "18:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
@@ -83,7 +83,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:30",
     "room": "Saal 1",
     "format": "DF",
@@ -91,26 +91,26 @@
     "id": 7
   },
   {
-    "title": "Sternbrücke FOREVER (4)",
+    "title": "Tetsuo: The Iron Man (4)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
-    "time": "18:30",
+    "date": "2026-10-29",
+    "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
     "id": 8
   },
   {
-    "title": "Tetsuo: The Iron Man (4)",
+    "title": "The Killer (4)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
-    "time": "20:00",
+    "date": "2026-10-29",
+    "time": "21:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
@@ -122,7 +122,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:00",
     "room": "Saal 1",
     "format": "DF",
@@ -135,8 +135,8 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
-    "time": "20:10",
+    "date": "2026-10-29",
+    "time": "15:10",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
@@ -148,7 +148,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
@@ -161,7 +161,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "10:50",
     "room": "Saal 1",
     "format": "DF",
@@ -174,7 +174,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "15:10",
     "room": "Saal 1",
     "format": "DF",
@@ -182,43 +182,17 @@
     "id": 14
   },
   {
-    "title": "Bibi Blocksberg - Die total verhexte Zeitreise (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Abaton",
-    "date": "2026-10-28",
-    "time": "15:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 15
-  },
-  {
     "title": "Biermann (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 16
-  },
-  {
-    "title": "Billy Elliot - I Will Dance (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Abaton",
-    "date": "2026-10-28",
-    "time": "12:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 17
+    "id": 15
   },
   {
     "title": "Checker Tobi und die Reise zu den fliegenden Flüssen (2)",
@@ -226,12 +200,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 18
+    "id": 16
   },
   {
     "title": "Coyote vs. ACME (4)",
@@ -239,12 +213,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 19
+    "id": 17
   },
   {
     "title": "Das geheime Stockwerk (2)",
@@ -252,25 +226,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "15:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 20
-  },
-  {
-    "title": "Der Wunderweltenbaum (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Abaton",
-    "date": "2026-10-28",
-    "time": "10:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 21
+    "id": 18
   },
   {
     "title": "Die Blutgräfin (4)",
@@ -278,25 +239,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
-    "time": "17:10",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 22
-  },
-  {
-    "title": "Die Blutgräfin (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 23
+    "id": 19
   },
   {
     "title": "Die Teufel - Director's Cut (4)",
@@ -304,25 +252,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "21:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 24
-  },
-  {
-    "title": "Die Teufel - Director's Cut (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Abaton",
-    "date": "2026-10-28",
-    "time": "22:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 25
+    "id": 20
   },
   {
     "title": "Eine Krankheit wie ein Gedicht (2)",
@@ -330,12 +265,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 26
+    "id": 21
+  },
+  {
+    "title": "Heimsuchung - Eine Jahrhundertgeschichte (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Abaton",
+    "date": "2026-10-29",
+    "time": "13:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
+    "id": 22
   },
   {
     "title": "Mittagsstunde (4)",
@@ -343,12 +291,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "10:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 27
+    "id": 23
   },
   {
     "title": "Moscas - Fliegen und andere Gäste (4)",
@@ -356,12 +304,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
+    "time": "10:50",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
+    "id": 24
+  },
+  {
+    "title": "Moscas - Fliegen und andere Gäste (4)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Abaton",
+    "date": "2026-10-29",
     "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 28
+    "id": 25
   },
   {
     "title": "Obsession - Du sollst mich lieben (4)",
@@ -369,25 +330,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "21:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 29
-  },
-  {
-    "title": "Obsession - Du sollst mich lieben (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Abaton",
-    "date": "2026-10-28",
-    "time": "22:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 30
+    "id": 26
   },
   {
     "title": "Oppenheimer (2)",
@@ -395,12 +343,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "10:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 31
+    "id": 27
   },
   {
     "title": "Pan's Labyrinth (4)",
@@ -408,12 +356,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "21:50",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 32
+    "id": 28
+  },
+  {
+    "title": "Primetime (4)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Abaton",
+    "date": "2026-10-29",
+    "time": "21:45",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
+    "id": 29
   },
   {
     "title": "Shaun das Schaf - Spuk im Kürbisfeld (2)",
@@ -421,12 +382,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 33
+    "id": 30
   },
   {
     "title": "Sneak Preview (4)",
@@ -434,12 +395,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 34
+    "id": 31
   },
   {
     "title": "Sonne und Beton (2)",
@@ -447,12 +408,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "09:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 35
+    "id": 32
   },
   {
     "title": "Sternbrücke FOREVER (2)",
@@ -460,12 +421,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 36
+    "id": 33
+  },
+  {
+    "title": "The Cowboy (4)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Abaton",
+    "date": "2026-10-29",
+    "time": "13:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
+    "id": 34
   },
   {
     "title": "The Killer (4)",
@@ -473,12 +447,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "21:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 37
+    "id": 35
   },
   {
     "title": "Tschick (2)",
@@ -486,12 +460,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "10:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 38
+    "id": 36
   },
   {
     "title": "Vaterland (2)",
@@ -499,12 +473,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
-    "time": "19:50",
+    "date": "2026-10-29",
+    "time": "19:40",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 39
+    "id": 37
   },
   {
     "title": "Vengeance is Mine, All Others Pay Cash (4)",
@@ -512,25 +486,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 40
-  },
-  {
-    "title": "Was haben wir gelacht (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Abaton",
-    "date": "2026-10-28",
-    "time": "17:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 41
+    "id": 38
   },
   {
     "title": "Watching People Watching Birds (2)",
@@ -538,12 +499,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "13:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 42
+    "id": 39
   },
   {
     "title": "Watching People Watching Birds (2)",
@@ -551,12 +512,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 43
+    "id": 40
   },
   {
     "title": "Alte Liebe (2)",
@@ -564,12 +525,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "14:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 44
+    "id": 41
   },
   {
     "title": "Corpus Delicti (2)",
@@ -577,34 +538,73 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "13:45",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
+    "id": 42
+  },
+  {
+    "title": "Die Odyssee (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Astor Film Lounge",
+    "date": "2026-10-29",
+    "time": "13:45",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
+    "id": 43
+  },
+  {
+    "title": "Die Odyssee (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Astor Film Lounge",
+    "date": "2026-10-29",
+    "time": "16:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
+    "id": 44
+  },
+  {
+    "title": "Die Odyssee (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Astor Film Lounge",
+    "date": "2026-10-29",
+    "time": "19:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
     "id": 45
   },
   {
-    "title": "Die Odyssee (2)",
+    "title": "Frau Winkler verlässt das Haus (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-10-28",
-    "time": "13:45",
+    "date": "2026-10-29",
+    "time": "14:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
     "id": 46
   },
   {
-    "title": "Die Odyssee (2)",
+    "title": "Vaterland (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-10-28",
-    "time": "19:30",
+    "date": "2026-10-29",
+    "time": "14:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
@@ -616,7 +616,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:30",
     "room": "Saal 1",
     "format": "DF",
@@ -624,12 +624,12 @@
     "id": 48
   },
   {
-    "title": "So finster die Nacht (2)",
+    "title": "Dokumentarfilmsalon (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "B-Movie",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
@@ -637,17 +637,30 @@
     "id": 49
   },
   {
+    "title": "So finster die Nacht (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "B-Movie",
+    "date": "2026-10-29",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://b-movie-hamburg.critic.de/kinoprogramm/",
+    "id": 50
+  },
+  {
     "title": "Sonderveranstaltung (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "B-Movie",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "19:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://b-movie-hamburg.critic.de/kinoprogramm/",
-    "id": 50
+    "id": 51
   },
   {
     "title": "The New West (4)",
@@ -655,51 +668,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "B-Movie",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://b-movie-hamburg.critic.de/kinoprogramm/",
-    "id": 51
-  },
-  {
-    "title": "Adams Acht (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Elbe-Kino",
-    "date": "2026-10-28",
-    "time": "17:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://elbe-kino-hamburg.critic.de/kinoprogramm/",
     "id": 52
-  },
-  {
-    "title": "Chopin - Eine Sonate in Paris (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Elbe-Kino",
-    "date": "2026-10-28",
-    "time": "20:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://elbe-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 53
-  },
-  {
-    "title": "Alte Liebe (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Filmraum",
-    "date": "2026-10-28",
-    "time": "20:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 54
   },
   {
     "title": "Das Geheimnis der gestohlenen Maske (2)",
@@ -707,12 +681,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "15:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 55
+    "id": 53
   },
   {
     "title": "Die Blutgräfin (4)",
@@ -720,12 +694,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 56
+    "id": 54
   },
   {
     "title": "Eine Krankheit wie ein Gedicht (2)",
@@ -733,12 +707,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "16:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 57
+    "id": 55
   },
   {
     "title": "Emil und die Detektive (2)",
@@ -746,12 +720,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "15:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 58
+    "id": 56
   },
   {
     "title": "Frau Winkler verlässt das Haus (2)",
@@ -759,25 +733,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 59
+    "id": 57
   },
   {
-    "title": "Staatsschutz (2)",
+    "title": "Frau Winkler verlässt das Haus (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-10-28",
-    "time": "15:15",
+    "date": "2026-10-29",
+    "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 60
+    "id": 58
   },
   {
     "title": "Sternbrücke FOREVER (4)",
@@ -785,12 +759,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "15:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 61
+    "id": 59
   },
   {
     "title": "Vaterland (2)",
@@ -798,12 +772,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 62
+    "id": 60
+  },
+  {
+    "title": "Biermann (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-10-29",
+    "time": "12:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 61
   },
   {
     "title": "Lügen über meine Mutter (2)",
@@ -811,20 +798,33 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Holi",
-    "date": "2026-10-28",
-    "time": "16:45",
+    "date": "2026-10-29",
+    "time": "11:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 62
+  },
+  {
+    "title": "Sinn und Sinnlichkeit (4)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-10-29",
+    "time": "16:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://holi-hamburg.critic.de/kinoprogramm/",
     "id": 63
   },
   {
-    "title": "Lügen über meine Mutter (2)",
+    "title": "Sinn und Sinnlichkeit (4)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Holi",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:30",
     "room": "Saal 1",
     "format": "DF",
@@ -832,56 +832,17 @@
     "id": 64
   },
   {
-    "title": "Sinn und Sinnlichkeit (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Holi",
-    "date": "2026-10-28",
-    "time": "14:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
-    "id": 65
-  },
-  {
-    "title": "Sinn und Sinnlichkeit (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Holi",
-    "date": "2026-10-28",
-    "time": "19:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
-    "id": 66
-  },
-  {
     "title": "BTS WORLD TOUR 'ARIRANG' IN SÃO PAULO: LIVE VIEWING (4)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "14:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 67
-  },
-  {
-    "title": "Clayface (3)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
-    "time": "21:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 68
+    "id": 65
   },
   {
     "title": "Der Herr der Ringe - die Gefährten (Extended Version) (3)",
@@ -889,12 +850,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "10:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 69
+    "id": 66
   },
   {
     "title": "Der Herr der Ringe Trilogie (Extended Version) (2)",
@@ -902,51 +863,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "10:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 70
-  },
-  {
-    "title": "Digger (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
-    "time": "16:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 71
-  },
-  {
-    "title": "Eiserne Wildnis - Heart Of The Beast (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
-    "time": "17:40",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 72
-  },
-  {
-    "title": "Eiserne Wildnis - Heart Of The Beast (3)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
-    "time": "22:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 73
+    "id": 67
   },
   {
     "title": "Insidious: Out of the Further (2)",
@@ -954,12 +876,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "23:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 74
+    "id": 68
   },
   {
     "title": "Jak Zyc, Zeby Nie Zwariowac (4)",
@@ -967,12 +889,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 75
+    "id": 69
   },
   {
     "title": "Karaoke Murder (4)",
@@ -980,12 +902,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "19:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 76
+    "id": 70
   },
   {
     "title": "Obsession - Du sollst mich lieben (2)",
@@ -993,12 +915,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "23:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 77
+    "id": 71
   },
   {
     "title": "Other Mommy (3)",
@@ -1006,12 +928,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:10",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 78
+    "id": 72
   },
   {
     "title": "Sneak Preview (3)",
@@ -1019,90 +941,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:40",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 79
+    "id": 73
   },
   {
-    "title": "Street Fighter (2)",
+    "title": "Verity - Dunkle Geheimnisse (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
-    "time": "10:45",
+    "date": "2026-10-29",
+    "time": "22:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 80
-  },
-  {
-    "title": "Street Fighter (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
-    "time": "22:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 81
-  },
-  {
-    "title": "The Rocky Horror Picture Show (3)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
-    "time": "20:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 82
-  },
-  {
-    "title": "The Social Reckoning (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
-    "time": "19:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 83
-  },
-  {
-    "title": "Whalefall (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-10-28",
-    "time": "19:20",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 84
-  },
-  {
-    "title": "Die Mumie (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Koralle",
-    "date": "2026-10-28",
-    "time": "20:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 85
+    "id": 74
   },
   {
     "title": "Ohne Wahrheit (2)",
@@ -1110,25 +967,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Koralle",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "19:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 86
-  },
-  {
-    "title": "Vaterland (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Koralle",
-    "date": "2026-10-28",
-    "time": "14:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 87
+    "id": 75
   },
   {
     "title": "Dokumentarfilmwoche Hamburg (2)",
@@ -1136,12 +980,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Lichtmess",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://lichtmess-hamburg.critic.de/kinoprogramm/",
-    "id": 88
+    "id": 76
   },
   {
     "title": "Niñxs - Das Leben glitzert (2)",
@@ -1149,12 +993,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Lichtmess",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://lichtmess-hamburg.critic.de/kinoprogramm/",
-    "id": 89
+    "id": 77
   },
   {
     "title": "Nosferatu - Eine Symphonie des Grauens (2)",
@@ -1162,12 +1006,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Metropolis",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://metropolis-kino-im-planet-harburg-hamburg.critic.de/kinoprogramm/",
-    "id": 90
+    "id": 78
   },
   {
     "title": "The Rocky Horror Picture Show (2)",
@@ -1175,25 +1019,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Metropolis",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://metropolis-kino-im-planet-harburg-hamburg.critic.de/kinoprogramm/",
-    "id": 91
-  },
-  {
-    "title": "Call Me Queen (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Nestkino",
-    "date": "2026-10-28",
-    "time": "18:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://schanzenkino-73-hamburg.critic.de/kinoprogramm/",
-    "id": 92
+    "id": 79
   },
   {
     "title": "Coyote vs. ACME (4)",
@@ -1201,25 +1032,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Nestkino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "16:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://schanzenkino-73-hamburg.critic.de/kinoprogramm/",
-    "id": 93
+    "id": 80
   },
   {
-    "title": "Quir - Eine Palermo Love Story (2)",
+    "title": "Das geträumte Abenteuer (4)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Nestkino",
-    "date": "2026-10-28",
-    "time": "20:30",
+    "date": "2026-10-29",
+    "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://schanzenkino-73-hamburg.critic.de/kinoprogramm/",
-    "id": 94
+    "id": 81
   },
   {
     "title": "Quir - Eine Palermo Love Story (4)",
@@ -1227,12 +1058,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Nestkino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "16:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://schanzenkino-73-hamburg.critic.de/kinoprogramm/",
-    "id": 95
+    "id": 82
   },
   {
     "title": "Quir - Eine Palermo Love Story (4)",
@@ -1240,12 +1071,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Nestkino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "18:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://schanzenkino-73-hamburg.critic.de/kinoprogramm/",
-    "id": 96
+    "id": 83
   },
   {
     "title": "Was haben wir gelacht (2)",
@@ -1253,38 +1084,64 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Nestkino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "18:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://schanzenkino-73-hamburg.critic.de/kinoprogramm/",
-    "id": 97
+    "id": 84
   },
   {
-    "title": "Frau Winkler verlässt das Haus (2)",
+    "title": "Corpus Delicti (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Passage",
-    "date": "2026-10-28",
-    "time": "14:00",
+    "date": "2026-10-29",
+    "time": "18:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 98
+    "id": 85
   },
   {
-    "title": "Blade Runner 2049 (3)",
+    "title": "Lügen über meine Mutter (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Passage",
+    "date": "2026-10-29",
+    "time": "18:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
+    "id": 86
+  },
+  {
+    "title": "Sneak Preview (3)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Passage",
+    "date": "2026-10-29",
+    "time": "20:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
+    "id": 87
+  },
+  {
+    "title": "Alte Liebe (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
-    "time": "20:00",
+    "date": "2026-10-29",
+    "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 99
+    "id": 88
   },
   {
     "title": "Clayface (3)",
@@ -1292,12 +1149,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
+    "time": "14:15",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 89
+  },
+  {
+    "title": "Clayface (3)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Savoy",
+    "date": "2026-10-29",
     "time": "19:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 100
+    "id": 90
   },
   {
     "title": "Das Ding aus einer anderen Welt (3)",
@@ -1305,12 +1175,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
+    "time": "17:45",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 91
+  },
+  {
+    "title": "Das Ding aus einer anderen Welt (3)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Savoy",
+    "date": "2026-10-29",
     "time": "19:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 101
+    "id": 92
   },
   {
     "title": "Der Herr der Ringe Trilogie (Extended Version) (3)",
@@ -1318,12 +1201,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 102
+    "id": 93
   },
   {
     "title": "Die Odyssee (70 mm) (133)",
@@ -1331,12 +1214,38 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "12:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 103
+    "id": 94
+  },
+  {
+    "title": "Die Teufel - Director's Cut (3)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Savoy",
+    "date": "2026-10-29",
+    "time": "20:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 95
+  },
+  {
+    "title": "Godzilla Minus Zero (4)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Savoy",
+    "date": "2026-10-29",
+    "time": "20:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 96
   },
   {
     "title": "Halloween - Die Nacht des Grauens (3)",
@@ -1344,12 +1253,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 104
+    "id": 97
   },
   {
     "title": "Ozzy & Black Sabbath: Back To The Beginning (3)",
@@ -1357,25 +1266,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 105
-  },
-  {
-    "title": "Ozzy & Black Sabbath: Back To The Beginning (3)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Savoy",
-    "date": "2026-10-28",
-    "time": "20:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 106
+    "id": 98
   },
   {
     "title": "Queens of the Dead (3)",
@@ -1383,12 +1279,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "16:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 107
+    "id": 99
   },
   {
     "title": "Special Screening(s) (3)",
@@ -1396,12 +1292,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 108
+    "id": 100
   },
   {
     "title": "The Killer (4)",
@@ -1409,12 +1305,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 109
+    "id": 101
   },
   {
     "title": "The Rocky Horror Picture Show (3)",
@@ -1422,12 +1318,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 110
+    "id": 102
   },
   {
     "title": "Whalefall (3)",
@@ -1435,12 +1331,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
-    "time": "17:30",
+    "date": "2026-10-29",
+    "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 111
+    "id": 103
   },
   {
     "title": "Wildwood (3)",
@@ -1448,25 +1344,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "16:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 112
+    "id": 104
   },
   {
-    "title": "Bob Trevino Likes It (2)",
+    "title": "Woodoo - Die Schreckensinsel der Zombies (3)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
-    "cinema": "Studio Kino",
-    "date": "2026-10-28",
-    "time": "15:30",
+    "cinema": "Savoy",
+    "date": "2026-10-29",
+    "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
-    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 113
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 105
   },
   {
     "title": "Bob Trevino Likes It (4)",
@@ -1474,12 +1370,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "16:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 114
+    "id": 106
   },
   {
     "title": "Die andere Seite (2)",
@@ -1487,12 +1383,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 115
+    "id": 107
   },
   {
     "title": "Die andere Seite (2)",
@@ -1500,12 +1396,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "16:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 116
+    "id": 108
   },
   {
     "title": "Digger (2)",
@@ -1513,12 +1409,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 117
+    "id": 109
   },
   {
     "title": "Digger (2)",
@@ -1526,38 +1422,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 118
-  },
-  {
-    "title": "Digger (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Studio Kino",
-    "date": "2026-10-28",
-    "time": "21:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 119
-  },
-  {
-    "title": "Hope (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Studio Kino",
-    "date": "2026-10-28",
-    "time": "16:45",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 120
+    "id": 110
   },
   {
     "title": "KitKatClub: Kinks of Berlin (2)",
@@ -1565,12 +1435,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "18:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 121
+    "id": 111
   },
   {
     "title": "Klara und die Sonne (2)",
@@ -1578,12 +1448,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 122
+    "id": 112
+  },
+  {
+    "title": "Possible Love (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Studio Kino",
+    "date": "2026-10-29",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
+    "id": 113
   },
   {
     "title": "Possible Love (4)",
@@ -1591,25 +1474,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "16:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 123
+    "id": 114
   },
   {
-    "title": "Possible Love (4)",
+    "title": "Primetime (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
-    "time": "19:45",
+    "date": "2026-10-29",
+    "time": "17:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 124
+    "id": 115
   },
   {
     "title": "Primetime (4)",
@@ -1617,25 +1500,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 125
-  },
-  {
-    "title": "Sacrifice (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Studio Kino",
-    "date": "2026-10-28",
-    "time": "16:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 126
+    "id": 116
   },
   {
     "title": "Sneak Preview (4)",
@@ -1643,25 +1513,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "21:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 127
-  },
-  {
-    "title": "The Invite (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Studio Kino",
-    "date": "2026-10-28",
-    "time": "18:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 128
+    "id": 117
   },
   {
     "title": "The Killer (2)",
@@ -1669,12 +1526,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 129
+    "id": 118
   },
   {
     "title": "The Killer (2)",
@@ -1682,12 +1539,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "21:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 130
+    "id": 119
   },
   {
     "title": "The Killer (2)",
@@ -1695,12 +1552,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 131
+    "id": 120
+  },
+  {
+    "title": "Adams Acht (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-29",
+    "time": "10:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
+    "id": 121
   },
   {
     "title": "Alte Liebe (2)",
@@ -1708,12 +1578,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
+    "time": "16:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
+    "id": 122
+  },
+  {
+    "title": "Alte Liebe (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-29",
     "time": "20:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 132
+    "id": 123
   },
   {
     "title": "Barbara Buser - Pionierin der Nachhaltigkeit (2)",
@@ -1721,12 +1604,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 133
+    "id": 124
   },
   {
     "title": "Barbara Buser - Pionierin der Nachhaltigkeit (2)",
@@ -1734,25 +1617,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 134
-  },
-  {
-    "title": "Barbara Buser - Pionierin der Nachhaltigkeit (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Zeise Kino",
-    "date": "2026-10-28",
-    "time": "20:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 135
+    "id": 125
   },
   {
     "title": "Corpus Delicti (2)",
@@ -1760,12 +1630,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "14:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 136
+    "id": 126
   },
   {
     "title": "Der Herr der Ringe - die Gefährten (Extended Version) (4)",
@@ -1773,25 +1643,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "19:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 137
-  },
-  {
-    "title": "Der Pate II (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Zeise Kino",
-    "date": "2026-10-28",
-    "time": "20:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 138
+    "id": 127
   },
   {
     "title": "Digger (4)",
@@ -1799,12 +1656,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 139
+    "id": 128
   },
   {
     "title": "Do You Love Me (4)",
@@ -1812,25 +1669,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 140
+    "id": 129
   },
   {
-    "title": "Heimsuchung - Eine Jahrhundertgeschichte (2)",
+    "title": "Edmund und Luzie - Winterabenteuer (2)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
-    "time": "11:00",
+    "date": "2026-10-29",
+    "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 141
+    "id": 130
   },
   {
     "title": "Ich sterbe. Kommst du? (2)",
@@ -1838,12 +1695,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 142
+    "id": 131
   },
   {
     "title": "Liebhaberinnen (2)",
@@ -1851,12 +1708,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "10:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 143
+    "id": 132
   },
   {
     "title": "Liebhaberinnen (2)",
@@ -1864,12 +1721,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "15:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 144
+    "id": 133
   },
   {
     "title": "Liebhaberinnen (2)",
@@ -1877,12 +1734,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 145
+    "id": 134
   },
   {
     "title": "Meeting the Buddha (2)",
@@ -1890,12 +1747,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 146
+    "id": 135
+  },
+  {
+    "title": "Mittagsstunde (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-29",
+    "time": "10:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
+    "id": 136
   },
   {
     "title": "NAZA (4)",
@@ -1903,25 +1773,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "17:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 147
-  },
-  {
-    "title": "NAZA (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Zeise Kino",
-    "date": "2026-10-28",
-    "time": "18:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 148
+    "id": 137
   },
   {
     "title": "Primetime (4)",
@@ -1929,25 +1786,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
-    "time": "20:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 149
-  },
-  {
-    "title": "Primetime (4)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 150
+    "id": 138
+  },
+  {
+    "title": "Rocky (4)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-29",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
+    "id": 139
   },
   {
     "title": "Sneak Preview (2)",
@@ -1955,12 +1812,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 151
+    "id": 140
   },
   {
     "title": "Sneak Preview (4)",
@@ -1968,25 +1825,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "21:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 152
-  },
-  {
-    "title": "Spaziergang nach Syrakus (2)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Zeise Kino",
-    "date": "2026-10-28",
-    "time": "15:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 153
+    "id": 141
   },
   {
     "title": "Sternbrücke (2)",
@@ -1994,12 +1838,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "13:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 154
+    "id": 142
+  },
+  {
+    "title": "Sternbrücke (2)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Zeise Kino",
+    "date": "2026-10-29",
+    "time": "14:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
+    "id": 143
   },
   {
     "title": "Sternbrücke (4)",
@@ -2007,12 +1864,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 155
+    "id": 144
   },
   {
     "title": "Sternbrücke (4)",
@@ -2020,12 +1877,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "22:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 156
+    "id": 145
   },
   {
     "title": "Vaterland (2)",
@@ -2033,12 +1890,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 157
+    "id": 146
   },
   {
     "title": "Vaterland (4)",
@@ -2046,12 +1903,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "19:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 158
+    "id": 147
   },
   {
     "title": "Was haben wir gelacht (2)",
@@ -2059,12 +1916,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 159
+    "id": 148
   },
   {
     "title": "Wildwood (4)",
@@ -2072,12 +1929,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "21:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 160
+    "id": 149
   },
   {
     "title": "Wir waren das dunkle Herz der Stadt - Der Untergang der Hamburger Gängeviertel (2)",
@@ -2085,11 +1942,11 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 161
+    "id": 150
   }
 ]
