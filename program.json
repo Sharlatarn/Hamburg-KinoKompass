@@ -1,12 +1,12 @@
 [
   {
-    "title": "Cine Club espanol (OmU)",
+    "title": "Die Blutgräfin",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
-    "time": "19:00",
+    "date": "2026-11-11",
+    "time": "16:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
@@ -18,7 +18,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:45",
     "room": "Saal 1",
     "format": "DF",
@@ -31,7 +31,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:00",
     "room": "Saal 1",
     "format": "DF",
@@ -44,7 +44,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
@@ -57,7 +57,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:00",
     "room": "Saal 1",
     "format": "DF",
@@ -70,7 +70,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "16:30",
     "room": "Saal 1",
     "format": "DF",
@@ -83,7 +83,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "12:00",
     "room": "Saal 1",
     "format": "DF",
@@ -91,13 +91,13 @@
     "id": 7
   },
   {
-    "title": "Moscas - Fliegen und andere Gäste",
+    "title": "LETsDOK",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
-    "time": "10:00",
+    "date": "2026-11-11",
+    "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
@@ -109,12 +109,38 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
-    "time": "16:30",
+    "date": "2026-11-11",
+    "time": "10:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
     "id": 9
+  },
+  {
+    "title": "Moscas - Fliegen und andere Gäste",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "3001",
+    "date": "2026-11-11",
+    "time": "16:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
+    "id": 10
+  },
+  {
+    "title": "Sonderveranstaltung",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "3001",
+    "date": "2026-11-11",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
+    "id": 11
   },
   {
     "title": "The Killer (OmU)",
@@ -122,12 +148,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "3001",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "21:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://3001-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 10
+    "id": 12
   },
   {
     "title": "Barbara Buser - Pionierin der Nachhaltigkeit (OmU)",
@@ -135,12 +161,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 11
+    "id": 13
   },
   {
     "title": "Biermann",
@@ -148,12 +174,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 12
+    "id": 14
   },
   {
     "title": "Die Blutgräfin (OmU)",
@@ -161,12 +187,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "17:25",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 13
+    "id": 15
   },
   {
     "title": "Die Blutgräfin (OmU)",
@@ -174,12 +200,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 14
+    "id": 16
   },
   {
     "title": "Die Olchis - Willkommen in Schmuddelfing",
@@ -187,12 +213,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "10:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 15
+    "id": 17
   },
   {
     "title": "Die Teufel - Director's Cut (OmU)",
@@ -200,12 +226,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "14:20",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 16
+    "id": 18
   },
   {
     "title": "Die Teufel - Director's Cut (OmU)",
@@ -213,12 +239,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:10",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 17
+    "id": 19
   },
   {
     "title": "Digger (OmU)",
@@ -226,12 +252,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 18
+    "id": 20
   },
   {
     "title": "Ein Talent fürs Morden (OmU)",
@@ -239,12 +265,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "17:35",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 19
+    "id": 21
   },
   {
     "title": "Ein Talent fürs Morden (OmU)",
@@ -252,12 +278,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:10",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 20
+    "id": 22
   },
   {
     "title": "Einar Schleef - Ich habe kein Deutschland gefunden",
@@ -265,12 +291,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "12:20",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 21
+    "id": 23
   },
   {
     "title": "Glaube (OmU)",
@@ -278,12 +304,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 22
+    "id": 24
   },
   {
     "title": "Helene Weigel - Revolutionärin im Rampenlicht",
@@ -291,12 +317,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 23
+    "id": 25
   },
   {
     "title": "Identitti",
@@ -304,12 +330,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 24
+    "id": 26
   },
   {
     "title": "In Liebe, Eure Hilde",
@@ -317,12 +343,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 25
+    "id": 27
   },
   {
     "title": "Junkies of Dreaming - Mahler 3 Currentzis (OmU)",
@@ -330,12 +356,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 26
+    "id": 28
   },
   {
     "title": "La Bola negra (OmU)",
@@ -343,12 +369,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 27
+    "id": 29
   },
   {
     "title": "Minotaurus (OmU)",
@@ -356,12 +382,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "17:20",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 28
+    "id": 30
   },
   {
     "title": "Minotaurus (OmU)",
@@ -369,12 +395,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 29
+    "id": 31
   },
   {
     "title": "Mittagsstunde (OmU)",
@@ -382,12 +408,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 30
+    "id": 32
   },
   {
     "title": "NAZA (OmU)",
@@ -395,12 +421,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:10",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 31
+    "id": 33
   },
   {
     "title": "NAZA (OmU)",
@@ -408,12 +434,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "16:10",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 32
+    "id": 34
   },
   {
     "title": "Pan's Labyrinth (OmU)",
@@ -421,12 +447,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:25",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 33
+    "id": 35
   },
   {
     "title": "Paris, Texas (OmU)",
@@ -434,12 +460,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 34
+    "id": 36
   },
   {
     "title": "Paris, Texas (OmU)",
@@ -447,12 +473,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "17:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 35
+    "id": 37
   },
   {
     "title": "Sneak Preview (OmU)",
@@ -460,12 +486,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 36
+    "id": 38
   },
   {
     "title": "Sternbrücke FOREVER",
@@ -473,12 +499,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 37
+    "id": 39
   },
   {
     "title": "The Killer (OmU)",
@@ -486,12 +512,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:50",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 38
+    "id": 40
   },
   {
     "title": "Wild Horse Nine (OmU)",
@@ -499,12 +525,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Abaton",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://abaton-hamburg.critic.de/kinoprogramm/",
-    "id": 39
+    "id": 41
   },
   {
     "title": "Die Odyssee",
@@ -512,12 +538,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 40
+    "id": 42
+  },
+  {
+    "title": "Geister",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Astor Film Lounge",
+    "date": "2026-11-11",
+    "time": "17:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
+    "id": 43
   },
   {
     "title": "George Michael - The Faith Tour (OmU)",
@@ -525,12 +564,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "17:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 41
+    "id": 44
   },
   {
     "title": "George Michael - The Faith Tour (OmU)",
@@ -538,12 +577,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 42
+    "id": 45
   },
   {
     "title": "Heimsuchung - Eine Jahrhundertgeschichte",
@@ -551,25 +590,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:40",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 43
-  },
-  {
-    "title": "RBO Live 2026/27: Carmen (Royal Opera)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Astor Film Lounge",
-    "date": "2026-11-10",
-    "time": "20:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 44
+    "id": 46
   },
   {
     "title": "Verity - Dunkle Geheimnisse (MXP 2D)",
@@ -577,12 +603,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 45
+    "id": 47
   },
   {
     "title": "Wild Horse Nine",
@@ -590,12 +616,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 46
+    "id": 48
   },
   {
     "title": "Wild Horse Nine (OmU)",
@@ -603,25 +629,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Astor Film Lounge",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://astor-film-lounge-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 47
-  },
-  {
-    "title": "Briefe aus der Wilcza - Letters from Wolf Street (OmU)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "B-Movie",
-    "date": "2026-11-10",
-    "time": "20:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://b-movie-hamburg.critic.de/kinoprogramm/",
-    "id": 48
+    "id": 49
   },
   {
     "title": "Die Flügel der Menschen (OmU)",
@@ -629,20 +642,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "B-Movie",
-    "date": "2026-11-10",
-    "time": "20:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://b-movie-hamburg.critic.de/kinoprogramm/",
-    "id": 49
-  },
-  {
-    "title": "Gaucho Gaucho (OmU)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "B-Movie",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
@@ -650,12 +650,12 @@
     "id": 50
   },
   {
-    "title": "Hörbarkonzert",
+    "title": "Gaucho Gaucho (OmU)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "B-Movie",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
@@ -663,17 +663,30 @@
     "id": 51
   },
   {
+    "title": "Hörbarkonzert",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "B-Movie",
+    "date": "2026-11-11",
+    "time": "20:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://b-movie-hamburg.critic.de/kinoprogramm/",
+    "id": 52
+  },
+  {
     "title": "Nationalhymne (OmU)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "B-Movie",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://b-movie-hamburg.critic.de/kinoprogramm/",
-    "id": 52
+    "id": 53
   },
   {
     "title": "Von Mädchen und Pferden (OmU)",
@@ -681,46 +694,33 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "B-Movie",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://b-movie-hamburg.critic.de/kinoprogramm/",
-    "id": 53
-  },
-  {
-    "title": "Biermann",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Elbe-Kino",
-    "date": "2026-11-10",
-    "time": "17:45",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://elbe-kino-hamburg.critic.de/kinoprogramm/",
     "id": 54
   },
   {
-    "title": "Sinn und Sinnlichkeit",
+    "title": "Heimsuchung - Eine Jahrhundertgeschichte",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Elbe-Kino",
-    "date": "2026-11-10",
-    "time": "17:15",
+    "date": "2026-11-11",
+    "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://elbe-kino-hamburg.critic.de/kinoprogramm/",
     "id": 55
   },
   {
-    "title": "Die Blutgräfin (OmU)",
+    "title": "Heimsuchung - Eine Jahrhundertgeschichte",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
@@ -728,56 +728,30 @@
     "id": 56
   },
   {
-    "title": "Drei Kameradinnen",
+    "title": "NAZA (OmU)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-11-10",
-    "time": "15:45",
+    "date": "2026-11-11",
+    "time": "16:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
     "id": 57
   },
   {
-    "title": "Heimsuchung - Eine Jahrhundertgeschichte",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Filmraum",
-    "date": "2026-11-10",
-    "time": "20:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 58
-  },
-  {
     "title": "NAZA (OmU)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-11-10",
-    "time": "16:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 59
-  },
-  {
-    "title": "NAZA (OmU)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Filmraum",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 60
+    "id": 58
   },
   {
     "title": "Shorts Attack - Kurzfilm(e)",
@@ -785,25 +759,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 61
-  },
-  {
-    "title": "Staatsschutz",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Filmraum",
-    "date": "2026-11-10",
-    "time": "17:45",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 62
+    "id": 59
   },
   {
     "title": "Sternbrücke FOREVER (OmU)",
@@ -811,12 +772,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Filmraum",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://filmraum-hamburg.critic.de/kinoprogramm/",
-    "id": 63
+    "id": 60
   },
   {
     "title": "Biermann",
@@ -824,12 +785,129 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Holi",
-    "date": "2026-11-10",
-    "time": "14:00",
+    "date": "2026-11-11",
+    "time": "11:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 61
+  },
+  {
+    "title": "Geister",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-11-11",
+    "time": "19:45",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 62
+  },
+  {
+    "title": "Heimsuchung - Eine Jahrhundertgeschichte",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-11-11",
+    "time": "12:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 63
+  },
+  {
+    "title": "Lieblingsmenschen",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-11-11",
+    "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://holi-hamburg.critic.de/kinoprogramm/",
     "id": 64
+  },
+  {
+    "title": "Sinn und Sinnlichkeit",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-11-11",
+    "time": "13:45",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 65
+  },
+  {
+    "title": "Sinn und Sinnlichkeit",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-11-11",
+    "time": "19:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 66
+  },
+  {
+    "title": "Sinn und Sinnlichkeit (OmU)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-11-11",
+    "time": "16:45",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 67
+  },
+  {
+    "title": "Wild Horse Nine",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-11-11",
+    "time": "11:40",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 68
+  },
+  {
+    "title": "Wild Horse Nine (OmU)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-11-11",
+    "time": "17:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 69
+  },
+  {
+    "title": "Wild Horse Nine (OmU)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Holi",
+    "date": "2026-11-11",
+    "time": "20:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://holi-hamburg.critic.de/kinoprogramm/",
+    "id": 70
   },
   {
     "title": "Beware Boiúna",
@@ -837,12 +915,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:50",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 65
+    "id": 71
+  },
+  {
+    "title": "Bibi Blocksberg - Die total verhexte Zeitreise",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Kinopolis Hafencity",
+    "date": "2026-11-11",
+    "time": "15:40",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
+    "id": 72
   },
   {
     "title": "Catli 2 (OmU)",
@@ -850,12 +941,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "21:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 66
+    "id": 73
+  },
+  {
+    "title": "Catli 2 (OmU)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Kinopolis Hafencity",
+    "date": "2026-11-11",
+    "time": "23:10",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
+    "id": 74
   },
   {
     "title": "Clayface",
@@ -863,12 +967,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 67
+    "id": 75
   },
   {
     "title": "Der Herr der Ringe - die Rückkehr des Königs (Extended Version)",
@@ -876,12 +980,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "10:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 68
+    "id": 76
   },
   {
     "title": "Der Herr der Ringe - Die Rückkehr des Königs (OF)",
@@ -889,12 +993,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "10:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 69
+    "id": 77
   },
   {
     "title": "Die jüngste Tochter (OmU)",
@@ -902,12 +1006,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 70
+    "id": 78
   },
   {
     "title": "Die Odyssee (OF)",
@@ -915,12 +1019,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 71
+    "id": 79
   },
   {
     "title": "Die Odyssee (OF)",
@@ -928,38 +1032,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 72
-  },
-  {
-    "title": "Ebenezer: Eine Weihnachtsgeschichte (OF)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
-    "time": "18:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 73
-  },
-  {
-    "title": "Eiserne Wildnis - Heart Of The Beast (OF)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
-    "time": "19:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 74
+    "id": 80
   },
   {
     "title": "Forgotten Island",
@@ -967,12 +1045,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 75
+    "id": 81
   },
   {
     "title": "George Michael - The Faith Tour (OF)",
@@ -980,12 +1058,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 76
+    "id": 82
   },
   {
     "title": "George Michael - The Faith Tour (OmU)",
@@ -993,25 +1071,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 77
-  },
-  {
-    "title": "Godzilla Minus Zero (OmU)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
-    "time": "20:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 78
+    "id": 83
   },
   {
     "title": "Hadoota (OmU)",
@@ -1019,12 +1084,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 79
+    "id": 84
   },
   {
     "title": "How to Rob a Bank (OF)",
@@ -1032,25 +1097,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 80
-  },
-  {
-    "title": "How to Rob a Bank (OF)",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
-    "time": "16:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 81
+    "id": 85
   },
   {
     "title": "League of Legends Worlds 26 - Finals in Cinema (OF)",
@@ -1058,12 +1110,38 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 82
+    "id": 86
+  },
+  {
+    "title": "Monster Mia",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Kinopolis Hafencity",
+    "date": "2026-11-11",
+    "time": "14:20",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
+    "id": 87
+  },
+  {
+    "title": "Other Mommy",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Kinopolis Hafencity",
+    "date": "2026-11-11",
+    "time": "17:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
+    "id": 88
   },
   {
     "title": "Other Mommy (OF)",
@@ -1071,25 +1149,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "21:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 83
-  },
-  {
-    "title": "Ramayana: Rise Of A Legend",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
-    "time": "19:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 84
+    "id": 89
   },
   {
     "title": "Ramayana: Rise Of A Legend (OmU)",
@@ -1097,25 +1162,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 85
-  },
-  {
-    "title": "Resident Evil",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
-    "time": "21:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 86
+    "id": 90
   },
   {
     "title": "Resident Evil (OF)",
@@ -1123,51 +1175,51 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "21:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 87
+    "id": 91
   },
   {
-    "title": "Street Fighter (OF)",
+    "title": "Sneak Preview",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
-    "time": "17:45",
+    "date": "2026-11-11",
+    "time": "20:40",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 88
+    "id": 92
   },
   {
-    "title": "Verity - Dunkle Geheimnisse",
+    "title": "Sneak Preview (OF)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Kinopolis Hafencity",
-    "date": "2026-11-10",
-    "time": "22:50",
+    "date": "2026-11-11",
+    "time": "20:40",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
-    "id": 89
+    "id": 93
   },
   {
-    "title": "Adams Acht",
+    "title": "Wildwood",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
-    "cinema": "Koralle",
-    "date": "2026-11-10",
-    "time": "17:15",
+    "cinema": "Kinopolis Hafencity",
+    "date": "2026-11-11",
+    "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
-    "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 90
+    "link": "https://kinopolis-hafencity-hamburg.critic.de/kinoprogramm/",
+    "id": 94
   },
   {
     "title": "Biermann",
@@ -1175,12 +1227,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Koralle",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
+    "time": "17:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
+    "id": 95
+  },
+  {
+    "title": "Biermann",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Koralle",
+    "date": "2026-11-11",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 91
+    "id": 96
   },
   {
     "title": "César und Rosalie",
@@ -1188,25 +1253,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Koralle",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 92
-  },
-  {
-    "title": "Heimsuchung - Eine Jahrhundertgeschichte",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Koralle",
-    "date": "2026-11-10",
-    "time": "19:30",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 93
+    "id": 97
   },
   {
     "title": "Mullewapp - Das große Kinoabenteuer der Freunde",
@@ -1214,12 +1266,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Koralle",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 94
+    "id": 98
   },
   {
     "title": "Sinn und Sinnlichkeit",
@@ -1227,12 +1279,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Koralle",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "12:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 95
+    "id": 99
   },
   {
     "title": "Sinn und Sinnlichkeit",
@@ -1240,38 +1292,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Koralle",
-    "date": "2026-11-10",
-    "time": "17:45",
+    "date": "2026-11-11",
+    "time": "19:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 96
+    "id": 100
   },
   {
-    "title": "Spaziergang nach Syrakus",
+    "title": "Watching People Watching Birds",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Koralle",
-    "date": "2026-11-10",
-    "time": "15:00",
+    "date": "2026-11-11",
+    "time": "14:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 97
-  },
-  {
-    "title": "Vaterland",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Koralle",
-    "date": "2026-11-10",
-    "time": "14:45",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://koralle-hamburg.critic.de/kinoprogramm/",
-    "id": 98
+    "id": 101
   },
   {
     "title": "Eyes Wide Shut",
@@ -1279,12 +1318,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Metropolis",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://metropolis-kino-im-planet-harburg-hamburg.critic.de/kinoprogramm/",
-    "id": 99
+    "id": 102
   },
   {
     "title": "Wir sind so frei",
@@ -1292,25 +1331,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Metropolis",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://metropolis-kino-im-planet-harburg-hamburg.critic.de/kinoprogramm/",
-    "id": 100
-  },
-  {
-    "title": "Adams Acht",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Passage",
-    "date": "2026-11-10",
-    "time": "18:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 101
+    "id": 103
   },
   {
     "title": "Alte Liebe",
@@ -1318,12 +1344,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Passage",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 102
+    "id": 104
   },
   {
     "title": "Chopin - Eine Sonate in Paris",
@@ -1331,33 +1357,7 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Passage",
-    "date": "2026-11-10",
-    "time": "18:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 103
-  },
-  {
-    "title": "Die andere Seite",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Passage",
-    "date": "2026-11-10",
-    "time": "18:00",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 104
-  },
-  {
-    "title": "Frau Winkler verlässt das Haus",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Passage",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
@@ -1365,81 +1365,81 @@
     "id": 105
   },
   {
-    "title": "George Michael - The Faith Tour (OmU)",
+    "title": "Der perfekte Urlaub",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Passage",
-    "date": "2026-11-10",
-    "time": "17:30",
+    "date": "2026-11-11",
+    "time": "20:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
     "id": 106
   },
   {
-    "title": "George Michael - The Faith Tour (OmU)",
+    "title": "Frau Winkler verlässt das Haus",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Passage",
-    "date": "2026-11-10",
-    "time": "20:00",
+    "date": "2026-11-11",
+    "time": "15:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
     "id": 107
   },
   {
-    "title": "Vaterland",
+    "title": "Frau Winkler verlässt das Haus",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Passage",
-    "date": "2026-11-10",
-    "time": "15:30",
+    "date": "2026-11-11",
+    "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
     "id": 108
   },
   {
-    "title": "Der Herr der Ringe - Die zwei Türme (OF)",
+    "title": "Geister",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
-    "cinema": "Savoy",
-    "date": "2026-11-10",
-    "time": "19:00",
+    "cinema": "Passage",
+    "date": "2026-11-11",
+    "time": "17:30",
     "room": "Saal 1",
     "format": "DF",
-    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
     "id": 109
   },
   {
-    "title": "George Michael - The Faith Tour (OF)",
+    "title": "George Michael - The Faith Tour (OmU)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
-    "cinema": "Savoy",
-    "date": "2026-11-10",
-    "time": "20:30",
+    "cinema": "Passage",
+    "date": "2026-11-11",
+    "time": "17:30",
     "room": "Saal 1",
     "format": "DF",
-    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
     "id": 110
   },
   {
-    "title": "Godzilla Minus Zero (OmU)",
+    "title": "George Michael - The Faith Tour (OmU)",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
-    "cinema": "Savoy",
-    "date": "2026-11-10",
-    "time": "13:00",
+    "cinema": "Passage",
+    "date": "2026-11-11",
+    "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
-    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
     "id": 111
   },
   {
@@ -1447,13 +1447,91 @@
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
+    "cinema": "Passage",
+    "date": "2026-11-11",
+    "time": "20:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://passage-kino-hamburg.critic.de/kinoprogramm/",
+    "id": 112
+  },
+  {
+    "title": "Der Herr der Ringe - Die zwei Türme (OF)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
     "cinema": "Savoy",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
+    "time": "19:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 113
+  },
+  {
+    "title": "George Michael - The Faith Tour (OF)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Savoy",
+    "date": "2026-11-11",
+    "time": "20:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 114
+  },
+  {
+    "title": "Godzilla Minus Zero (OmU)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Savoy",
+    "date": "2026-11-11",
+    "time": "13:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 115
+  },
+  {
+    "title": "Godzilla Minus Zero (OmU)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Savoy",
+    "date": "2026-11-11",
+    "time": "21:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 116
+  },
+  {
+    "title": "Prestige - Die Meister der Magie (OF)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Savoy",
+    "date": "2026-11-11",
+    "time": "20:15",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
+    "id": 117
+  },
+  {
+    "title": "Sneak Preview (OF)",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Savoy",
+    "date": "2026-11-11",
     "time": "22:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 112
+    "id": 118
   },
   {
     "title": "Street Fighter (OF)",
@@ -1461,12 +1539,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 113
+    "id": 119
   },
   {
     "title": "Wild Horse Nine (OF)",
@@ -1474,12 +1552,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 114
+    "id": 120
   },
   {
     "title": "Wildwood (OF)",
@@ -1487,12 +1565,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "12:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 115
+    "id": 121
   },
   {
     "title": "Wildwood (OF)",
@@ -1500,25 +1578,51 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Savoy",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://savoy-1-hamburg.critic.de/kinoprogramm/",
-    "id": 116
+    "id": 122
   },
   {
-    "title": "Klara und die Sonne",
+    "title": "Helene Weigel - Revolutionärin im Rampenlicht",
     "genre": "Programm",
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
+    "time": "12:45",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
+    "id": 123
+  },
+  {
+    "title": "Helene Weigel - Revolutionärin im Rampenlicht",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Studio Kino",
+    "date": "2026-11-11",
     "time": "16:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 117
+    "id": 124
+  },
+  {
+    "title": "Her Private Hell",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Studio Kino",
+    "date": "2026-11-11",
+    "time": "17:30",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
+    "id": 125
   },
   {
     "title": "La Bola negra",
@@ -1526,12 +1630,25 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-11-10",
-    "time": "20:00",
+    "date": "2026-11-11",
+    "time": "19:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 118
+    "id": 126
+  },
+  {
+    "title": "Minotaurus",
+    "genre": "Programm",
+    "director": "Unbekannt",
+    "duration": "",
+    "cinema": "Studio Kino",
+    "date": "2026-11-11",
+    "time": "13:00",
+    "room": "Saal 1",
+    "format": "DF",
+    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
+    "id": 127
   },
   {
     "title": "Primetime",
@@ -1539,25 +1656,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "16:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 119
-  },
-  {
-    "title": "Primetime",
-    "genre": "Programm",
-    "director": "Unbekannt",
-    "duration": "",
-    "cinema": "Studio Kino",
-    "date": "2026-11-10",
-    "time": "21:15",
-    "room": "Saal 1",
-    "format": "DF",
-    "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 120
+    "id": 128
   },
   {
     "title": "Rocky",
@@ -1565,12 +1669,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 121
+    "id": 129
   },
   {
     "title": "Sternbrücke FOREVER",
@@ -1578,12 +1682,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Studio Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://studio-kino-hamburg.critic.de/kinoprogramm/",
-    "id": 122
+    "id": 130
   },
   {
     "title": "Alte Liebe",
@@ -1591,12 +1695,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "14:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 123
+    "id": 131
   },
   {
     "title": "Barbara Buser - Pionierin der Nachhaltigkeit",
@@ -1604,12 +1708,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "12:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 124
+    "id": 132
   },
   {
     "title": "Barbara Buser - Pionierin der Nachhaltigkeit",
@@ -1617,12 +1721,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "15:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 125
+    "id": 133
   },
   {
     "title": "Biermann",
@@ -1630,12 +1734,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "19:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 126
+    "id": 134
   },
   {
     "title": "Block 10",
@@ -1643,12 +1747,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 127
+    "id": 135
   },
   {
     "title": "Chasing Trane: The John Coltrane Documentary (OmU)",
@@ -1656,12 +1760,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 128
+    "id": 136
   },
   {
     "title": "Das geheime Stockwerk",
@@ -1669,12 +1773,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "15:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 129
+    "id": 137
   },
   {
     "title": "Die Geschichte von Ottensen",
@@ -1682,12 +1786,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "11:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 130
+    "id": 138
   },
   {
     "title": "Ein Mädchen namens Willow",
@@ -1695,12 +1799,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "13:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 131
+    "id": 139
   },
   {
     "title": "Ein Talent fürs Morden",
@@ -1708,12 +1812,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "14:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 132
+    "id": 140
   },
   {
     "title": "Emil und die Detektive",
@@ -1721,12 +1825,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "14:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 133
+    "id": 141
   },
   {
     "title": "Julenissens verksted",
@@ -1734,12 +1838,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "12:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 134
+    "id": 142
   },
   {
     "title": "Julenissens verksted",
@@ -1747,12 +1851,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "14:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 135
+    "id": 143
   },
   {
     "title": "La Bola negra (OmU)",
@@ -1760,12 +1864,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "20:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 136
+    "id": 144
   },
   {
     "title": "Leica - Ein Jahrhundert in Bildern",
@@ -1773,12 +1877,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "12:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 137
+    "id": 145
   },
   {
     "title": "Leica - Ein Jahrhundert in Bildern",
@@ -1786,12 +1890,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 138
+    "id": 146
   },
   {
     "title": "Roditschi - Die Verwandtschaft (Ukrainische Sprachfassung)",
@@ -1799,12 +1903,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "10:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 139
+    "id": 147
   },
   {
     "title": "Schöne Seelen",
@@ -1812,12 +1916,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "17:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 140
+    "id": 148
   },
   {
     "title": "Shaun das Schaf - Spuk im Kürbisfeld",
@@ -1825,12 +1929,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "10:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 141
+    "id": 149
   },
   {
     "title": "Shaun das Schaf - Spuk im Kürbisfeld",
@@ -1838,12 +1942,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "14:45",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 142
+    "id": 150
   },
   {
     "title": "Sneak Preview",
@@ -1851,12 +1955,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 143
+    "id": 151
   },
   {
     "title": "Spaziergang nach Syrakus",
@@ -1864,12 +1968,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "15:15",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 144
+    "id": 152
   },
   {
     "title": "Sternbrücke",
@@ -1877,12 +1981,12 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "18:00",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 145
+    "id": 153
   },
   {
     "title": "Sternbrücke",
@@ -1890,11 +1994,11 @@
     "director": "Unbekannt",
     "duration": "",
     "cinema": "Zeise Kino",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "time": "22:30",
     "room": "Saal 1",
     "format": "DF",
     "link": "https://zeise-kinos-hamburg.critic.de/kinoprogramm/",
-    "id": 146
+    "id": 154
   }
 ]
